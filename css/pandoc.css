@@ -1,0 +1,52 @@
+/* Github Markdown */
+.markdown-body {
+    box-sizing: border-box;
+    min-width: 200px;
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 45px;
+}
+
+@media (max-width: 767px) {
+    .markdown-body {
+        padding: 15px;
+    }
+}
+
+/* Title Block */
+h1.title {
+    border-bottom: none;
+}
+h1.title,
+p.subtitle,
+p.author,
+p.date {
+    text-align: center;
+}
+
+/* Table of Contents */
+nav[id$="TOC"] {
+    padding: 2em 0;
+}
+
+nav[id$="TOC"] li {
+    list-style-type: none;
+}
+
+nav[id$="TOC"] ul {
+    padding-left: 0;
+}
+
+nav[id$="TOC"] ul ul {
+    margin-bottom: 0;
+    padding-left: 2em;
+}
+
+/* Footnotes */
+a.footnote-ref {
+    text-decoration: none;
+}
+
+a.footnote-back {
+    margin-left: 0.5em;
+}
