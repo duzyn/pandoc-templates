@@ -27,7 +27,7 @@ $for(css)$
   <link rel="stylesheet" href="$css$">
 $endfor$
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/2.10.0/github-markdown.min.css">
-<link rel="stylesheet" href="https://github.com/duzyn/pandoc-templates/raw/master/css/pandoc.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/duzyn/pandoc-templates/css/pandoc.css">
 $if(math)$
   $math$
 $endif$

@@ -4,19 +4,19 @@
 
 Coverter Markdown to HTML with Github theme：
 
-    pandoc FILE -o FILE.html -f markdown -t html5 --template=https://github.com/duzyn/pandoc-templates/raw/master/templates/github.html5
+    pandoc FILE -o FILE.html -f markdown -t html5 --template=https://cdn.jsdelivr.net/gh/duzyn/pandoc-templates/templates/github.html5
 
 Coverter Markdown to HTML with Marx theme：
 
-    pandoc FILE -o FILE.html -f markdown -t html5 --template=https://github.com/duzyn/pandoc-templates/raw/master/templates/marx.html5
+    pandoc FILE -o FILE.html -f markdown -t html5 --template=https://cdn.jsdelivr.net/gh/duzyn/pandoc-templates/templates/marx.html5
 
 Coverter Markdown to HTML with Tufte theme：
 
-    pandoc FILE -o FILE.html -f markdown -t html5 --template=https://github.com/duzyn/pandoc-templates/raw/master/templates/tufte.html5
+    pandoc FILE -o FILE.html -f markdown -t html5 --template=https://cdn.jsdelivr.net/gh/duzyn/pandoc-templates/templates/tufte.html5
 
 Coverter Markdown to PDF with Tufte handout theme：
 
-    pandoc FILE -o FILE.html -f markdown --pdf-engine=xelatex --template=https://github.com/duzyn/pandoc-templates/raw/master/templates/tufte-handout.tex
+    pandoc FILE -o FILE.html -f markdown --pdf-engine=xelatex --template=https://cdn.jsdelivr.net/gh/duzyn/pandoc-templates/templates/tufte-handout.tex
 
 ## Acknowledgements
 
