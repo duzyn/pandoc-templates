@@ -4,15 +4,15 @@
 
 Coverter Markdown to HTML with Github theme：
 
-    pandoc FILE -o FILE.html -f markdown -t html5 --template=https://cdn.jsdelivr.net/gh/duzyn/pandoc-templates/templates/github.html5
+    pandoc FILE -o FILE.html -f markdown -t html5 --template=https://cdn.jsdelivr.net/gh/duzyn/pandoc-templates/templates/github.html
 
 Coverter Markdown to HTML with Marx theme：
 
-    pandoc FILE -o FILE.html -f markdown -t html5 --template=https://cdn.jsdelivr.net/gh/duzyn/pandoc-templates/templates/marx.html5
+    pandoc FILE -o FILE.html -f markdown -t html5 --template=https://cdn.jsdelivr.net/gh/duzyn/pandoc-templates/templates/marx.html
 
 Coverter Markdown to HTML with Tufte theme：
 
-    pandoc FILE -o FILE.html -f markdown -t html5 --template=https://cdn.jsdelivr.net/gh/duzyn/pandoc-templates/templates/tufte.html5
+    pandoc FILE -o FILE.html -f markdown -t html5 --template=https://cdn.jsdelivr.net/gh/duzyn/pandoc-templates/templates/tufte.html
 
 Coverter Markdown to PDF with Tufte handout theme：
 
