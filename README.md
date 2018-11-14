@@ -4,19 +4,19 @@
 
 Coverter Markdown to HTML with Github theme：
 
-    pandoc FILE -o FILE.html -f markdown -t html5 --template=https://cdn.jsdelivr.net/gh/duzyn/pandoc-templates/templates/github.html
+    pandoc https://github.com/jgm/pandoc/raw/master/MANUAL.txt -o MANUAL_github.html -f markdown -t html5 --template=https://cdn.jsdelivr.net/gh/duzyn/pandoc-templates/templates/github.html
 
 Coverter Markdown to HTML with Marx theme：
 
-    pandoc FILE -o FILE.html -f markdown -t html5 --template=https://cdn.jsdelivr.net/gh/duzyn/pandoc-templates/templates/marx.html
+    pandoc https://github.com/jgm/pandoc/raw/master/MANUAL.txt -o MANUAL_marx.html -f markdown -t html5 --template=https://cdn.jsdelivr.net/gh/duzyn/pandoc-templates/templates/marx.html
 
 Coverter Markdown to HTML with Tufte theme：
 
-    pandoc FILE -o FILE.html -f markdown -t html5 --template=https://cdn.jsdelivr.net/gh/duzyn/pandoc-templates/templates/tufte.html
+    pandoc https://github.com/jgm/pandoc/raw/master/MANUAL.txt -o MANUAL_tufte.html -f markdown -t html5 --template=https://cdn.jsdelivr.net/gh/duzyn/pandoc-templates/templates/tufte.html
 
 Coverter Markdown to PDF with Tufte handout theme：
 
-    pandoc FILE -o FILE.html -f markdown --pdf-engine=xelatex --template=https://cdn.jsdelivr.net/gh/duzyn/pandoc-templates/templates/tufte-handout.tex
+    pandoc https://github.com/jgm/pandoc/raw/master/MANUAL.txt -o MANUAL_tufte.pdf -f markdown --pdf-engine=xelatex --template=https://cdn.jsdelivr.net/gh/duzyn/pandoc-templates/templates/tufte-handout.tex
 
 ## Acknowledgements
 
