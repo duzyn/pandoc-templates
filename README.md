@@ -16,7 +16,7 @@ Coverter Markdown to HTML with Tufte theme：
 
 Coverter Markdown to PDF with Tufte handout theme：
 
-    pandoc https://github.com/jgm/pandoc/raw/master/MANUAL.txt -o MANUAL_tufte.pdf -f markdown --pdf-engine=xelatex --template=https://cdn.jsdelivr.net/gh/duzyn/pandoc-templates/templates/tufte-handout.tex
+    pandoc https://github.com/jgm/pandoc/raw/master/MANUAL.txt -o MANUAL_tufte.pdf -f markdown --pdf-engine=xelatex --template=https://cdn.jsdelivr.net/gh/duzyn/pandoc-templates/templates/tufte-handout.tex -V documentclass=tufte-handout
 
 ## Acknowledgements
 
