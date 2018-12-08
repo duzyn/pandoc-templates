@@ -8,7 +8,7 @@ pandoc https://github.com/jgm/pandoc/raw/master/MANUAL.txt -o MANUAL_marx.html -
 
 # PDF with wkhtmltopdf
 
-pandoc https://github.com/jgm/pandoc/raw/master/MANUAL.txt -o MANUAL_wkhtmltopdf.pdf -f markdown -t html -N --toc --template=https://cdn.jsdelivr.net/gh/duzyn/pandoc-templates/templates/marx.html
+pandoc https://github.com/jgm/pandoc/raw/master/MANUAL.txt -o MANUAL_wkhtmltopdf.pdf -f markdown --pdf-engine=wkhtmltopdf -N --toc --template=https://cdn.jsdelivr.net/gh/duzyn/pandoc-templates/templates/marx.html
 
 # LaTeX
 
@@ -16,11 +16,11 @@ pandoc https://github.com/jgm/pandoc/raw/master/MANUAL.txt -o MANUAL_wkhtmltopdf
 
 # XeLaTeX PDF
 
-pandoc https://github.com/jgm/pandoc/raw/master/MANUAL.txt -o MANUAL_xelatex.pdf -f markdown -V mainfont="Noto Serif" -V sansfont="Noto Sans" -V monofont="Noto Sans Mono" -N --toc -s --pdf-engine=xelatex -V colorlinks=true
+pandoc https://github.com/jgm/pandoc/raw/master/MANUAL.txt -o MANUAL_xelatex.pdf -f markdown --pdf-engine=xelatex -N --toc -V mainfont="Noto Serif" -V sansfont="Noto Sans" -V monofont="Noto Sans Mono" -V colorlinks=true
 
 # XeLaTeX PDF 中文
 
-pandoc https://github.com/jgm/pandoc/raw/master/MANUAL.txt -o MANUAL_xelatex_zh.pdf -f markdown -V include-before="这是 1 句中文，只是为了测试而加入。" -V CJKmainfont="Noto Serif CJK SC" -V mainfont="Noto Serif" -V sansfont="Noto Sans" -V monofont="Noto Sans Mono"  -V documentclass=ctexart -N --toc -s --pdf-engine=xelatex -V colorlinks=true
+pandoc https://github.com/jgm/pandoc/raw/master/MANUAL.txt -o MANUAL_xelatex_zh.pdf -f markdown --pdf-engine=xelatex -N --toc -V mainfont="Noto Serif" -V sansfont="Noto Sans" -V monofont="Noto Sans Mono" -V colorlinks=true -V include-before="这是 1 句中文，只是为了测试而加入。" -V CJKmainfont="Noto Serif CJK SC"
 
 # EPUB 3
 
