@@ -1,0 +1,27 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Export HTML",
+            "type": "shell",
+            "command": "pandoc test/MANUAL.md -o test/MANUAL.html -f markdown -t html5 -N --toc --template=marx.html",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "Export PDF",
+            "type": "shell",
+            "command": "pandoc test/MANUAL.md -o test/MANUAL.pdf -f markdown --pdf-engine=wkhtmltopdf -N --toc --template=marx.html"
+        },
+        {
+            "label": "Export EPUB",
+            "type": "shell",
+            "command": "pandoc test/MANUAL.md -o test/MANUAL.epub -f markdown -t epub -N --toc",
+            "problemMatcher": []
+        }
+    ]
+}
