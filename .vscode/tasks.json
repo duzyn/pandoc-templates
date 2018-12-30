@@ -4,6 +4,16 @@
     "version": "2.0.0",
     "tasks": [
         {
+            "label": "Update Pandoc Manual Source",
+            "type": "shell",
+            "command": "aria2c https://github.com/jgm/pandoc/raw/master/MANUAL.txt -o test/MANUAL.md --allow-overwrite",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        },
+        {
             "label": "Export HTML",
             "type": "shell",
             "command": "pandoc test/MANUAL.md -o test/MANUAL.html -f markdown -t html5 -N --toc --template=marx.html",
@@ -21,6 +31,24 @@
             "label": "Export EPUB",
             "type": "shell",
             "command": "pandoc test/MANUAL.md -o test/MANUAL.epub -f markdown -t epub -N --toc",
+            "problemMatcher": []
+        },
+        {
+            "label": "Export PDF with eisvogel template",
+            "type": "shell",
+            "command": "pandoc test/MANUAL.md -o test/MANUAL.pdf -f markdown --pdf-engine=xelatex -N --toc --template=test/eisvogel.tex -V titlepage=true -V toc-own-page=true",
+            "problemMatcher": []
+        },
+        {
+            "label": "Export PDF with letter template",
+            "type": "shell",
+            "command": "pandoc test/letter.md -o test/letter.pdf -f markdown --pdf-engine=xelatex --template=test/letter.tex",
+            "problemMatcher": []
+        },
+        {
+            "label": "Export CJK PDF with eisvogel template",
+            "type": "shell",
+            "command": "pandoc test/chinese.md -o test/chinese.pdf -f markdown --pdf-engine=xelatex --template=test/eisvogel.tex",
             "problemMatcher": []
         }
     ]
