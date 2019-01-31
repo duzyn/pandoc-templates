@@ -28,6 +28,10 @@ $for(css)$
 $endfor$
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/2.10.0/github-markdown.min.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/duzyn/pandoc-templates/css/pandoc.css">
+$if(emoji)$
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/emojify.js/1.1.0/css/basic/emojify.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/emojify.js/1.1.0/js/emojify.min.js"></script>
+$endif$
 $if(math)$
   $math$
 $endif$
@@ -70,5 +74,20 @@ $for(include-after)$
 $include-after$
 $endfor$
 </div>
+$if(emoji)$
+<script>
+emojify.setConfig({
+ img_dir          : 'https://cdnjs.cloudflare.com/ajax/libs/emojify.js/1.1.0/images/basic',
+ ignored_tags     : {
+     'SCRIPT'  : 1,
+     'TEXTAREA': 1,
+     'A'       : 1,
+     'PRE'     : 1,
+     'CODE'    : 1
+ }
+});
+emojify.run();
+</script>
+$endif$
 </body>
 </html>
