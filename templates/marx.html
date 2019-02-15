@@ -14,20 +14,53 @@ $if(keywords)$
   <meta name="keywords" content="$for(keywords)$$keywords$$sep$, $endfor$">
 $endif$
   <title>$if(title-prefix)$$title-prefix$ – $endif$$pagetitle$</title>
-  <style type="text/css">code{white-space: pre;}</style>
+  <style>code{white-space: pre;}</style>
 $if(quotes)$
-  <style type="text/css">q { quotes: "“" "”" "‘" "’"; }</style>
+  <style>q { quotes: "“" "”" "‘" "’"; }</style>
 $endif$
 $if(highlighting-css)$
-  <style type="text/css">
+  <style>
 $highlighting-css$
   </style>
 $endif$
 $for(css)$
   <link rel="stylesheet" href="$css$">
 $endfor$
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/marx/3.0.5/marx.min.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/duzyn/pandoc-templates/css/pandoc.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/marx/3.0.7/marx.min.css">
+  <style>
+  /* Title Block */
+  h1.title {
+    border-bottom: none;
+  }
+  h1.title, p.subtitle, p.author, p.date {
+    text-align: center;
+  }
+
+  /* Table of Contents */
+  nav {
+    padding: 2em 0;
+  }
+  nav li {
+    list-style-type: none;
+  }
+  nav ul {
+    padding-left: 0;
+  }
+  nav ul ul {
+    margin-bottom: 0;
+    padding-left: 2em;
+  }
+
+  /* Footnotes */
+  a.footnote-ref {
+    text-decoration: none;
+  }
+  a.footnote-back {
+    margin-left: 0.5em;
+  }
+  </style>
+
 $if(math)$
   $math$
 $endif$

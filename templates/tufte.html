@@ -14,21 +14,38 @@ $if(keywords)$
   <meta name="keywords" content="$for(keywords)$$keywords$$sep$, $endfor$">
 $endif$
   <title>$if(title-prefix)$$title-prefix$ – $endif$$pagetitle$</title>
-  <style type="text/css">code{white-space: pre;}</style>
+  <style>code{white-space: pre;}</style>
 $if(quotes)$
-  <style type="text/css">q { quotes: "“" "”" "‘" "’"; }</style>
+  <style>q { quotes: "“" "”" "‘" "’"; }</style>
 $endif$
 $if(highlighting-css)$
-  <style type="text/css">
+  <style>
 $highlighting-css$
   </style>
 $endif$
 $for(css)$
   <link rel="stylesheet" href="$css$">
 $endfor$
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tufte-css/1.4/tufte.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/duzyn/pandoc-templates/css/latex.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/duzyn/pandoc-templates/css/tufte.css">
+  <link rel="stylesheet" href="https://cdn.staticaly.com/gh/edwardtufte/tufte-css/v1.4/latex.css">
+  <style>
+    pre {
+      font-size: 0.9rem;
+      width: 52.5%;
+      margin-left: 2.5%;
+      overflow-x: auto; 
+    }
+    table {
+        border-top: 2px solid #111;
+        border-bottom: 2px solid #111;
+        font-size: 1.1rem;
+    }
+    th {
+        border-bottom: 1px solid #111;
+    }
+  </style>
+
 $if(math)$
   $math$
 $endif$
