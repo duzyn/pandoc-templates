@@ -1,0 +1,38 @@
+/* Title Block */
+
+h1.title {
+    border-bottom: none;
+}
+
+h1.title, p.subtitle, p.author, p.date {
+    text-align: center;
+}
+
+/* Table of Contents */
+
+nav {
+    padding: 2em 0;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav ul {
+    padding-left: 0;
+}
+
+nav ul ul {
+    margin-bottom: 0;
+    padding-left: 2em;
+}
+
+/* Footnotes */
+
+a.footnote-ref {
+    text-decoration: none;
+}
+
+a.footnote-back {
+    margin-left: 0.5em;
+}
