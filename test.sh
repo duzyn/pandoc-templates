@@ -2,9 +2,9 @@
 rm examples/*
 
 # Download css stylesheets
-aria2c -d css --allow-overwrite https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/3.0.1/github-markdown.min.css
-aria2c -d css --allow-overwrite https://cdnjs.cloudflare.com/ajax/libs/marx/3.0.7/marx.min.css
-aria2c -d css --allow-overwrite https://cdnjs.cloudflare.com/ajax/libs/tufte-css/1.4/tufte.min.css
+aria2c -d css --allow-overwrite https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/3.0.1/github-markdown.css
+aria2c -d css --allow-overwrite https://cdnjs.cloudflare.com/ajax/libs/marx/3.0.7/marx.css
+aria2c -d css --allow-overwrite https://cdnjs.cloudflare.com/ajax/libs/tufte-css/1.4/tufte.css
 aria2c -d css --allow-overwrite https://cdn.staticaly.com/gh/edwardtufte/tufte-css/v1.4/latex.css
 
 # Generate HTML templates

@@ -14,6 +14,21 @@
     }
 }
 
+.markdown-body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Noto Serif', 'Noto Serif SC', 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+    font-family: -apple-system, BlinkMacSystemFont, 'Noto Sans', 'Noto Sans SC', 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    font-weight: bold;
+  
+}
+
 /* Title Block */
 
 h1.title {
