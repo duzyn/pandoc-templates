@@ -27,21 +27,49 @@ $for(css)$
   <link rel="stylesheet" href="$css$">
 $endfor$
 
-<style>
 !ifeq(!TEMPLATE)(github)(
-!include(../css/github-markdown.css)
-!include(../css/customize-github.css)
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/3.0.1/github-markdown.css">
+  <style>
+    !include(../css/customize-github.css)
+  </style>
 )
+
+!ifeq(!TEMPLATE)(github-offline)(
+  <style>
+    !include(../css/github-markdown.css)
+    !include(../css/customize-github.css)
+  </style>
+)
+
 !ifeq(!TEMPLATE)(marx)(
-!include(../css/marx.css)
-!include(../css/customize-marx.css)
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/marx/3.0.7/marx.css">
+  <style>
+    !include(../css/customize-marx.css)
+  </style>
 )
+
+!ifeq(!TEMPLATE)(marx-offline)(
+  <style>
+    !include(../css/marx.css)
+    !include(../css/customize-marx.css)
+  </style>
+)
+
 !ifeq(!TEMPLATE)(tufte)(
-!include(../css/tufte.css)
-!include(../css/latex.css)
-!include(../css/customize-tufte.css)
+  <link rel="stylesheet" href="https://cdn.staticaly.com/gh/edwardtufte/tufte-css/v1.4/tufte.css">
+  <link rel="stylesheet" href="https://cdn.staticaly.com/gh/edwardtufte/tufte-css/v1.4/latex.css">
+  <style>
+    !include(../css/customize-tufte.css)
+  </style>
 )
-</style>
+
+!ifeq(!TEMPLATE)(tufte-offline)(
+  <style>
+    !include(../css/tufte.css)
+    !include(../css/latex.css)
+    !include(../css/customize-tufte.css)
+  </style>
+)
 
 $if(math)$
   $math$
