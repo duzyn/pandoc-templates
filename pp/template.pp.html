@@ -29,21 +29,24 @@ $endfor$
 
 !ifeq(!TEMPLATE)(github)(
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/3.0.1/github-markdown.css">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Sans+SC|Noto+Serif|Noto+Serif+SC|Source+Code+Pro" rel="stylesheet">
   <style>
-    !include(../css/customize-github.css)
+    !include(../css/pandoc.css)
   </style>
 )
 
 !ifeq(!TEMPLATE)(github-offline)(
   <style>
     !include(../css/github-markdown.css)
-    !include(../css/customize-github.css)
+    !include(../css/pandoc.css)
   </style>
 )
 
 !ifeq(!TEMPLATE)(marx)(
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/marx/3.0.7/marx.css">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Sans+SC|Noto+Serif|Noto+Serif+SC|Source+Code+Pro" rel="stylesheet">
   <style>
+    !include(../css/pandoc.css)
     !include(../css/customize-marx.css)
   </style>
 )
@@ -51,6 +54,7 @@ $endfor$
 !ifeq(!TEMPLATE)(marx-offline)(
   <style>
     !include(../css/marx.css)
+    !include(../css/pandoc.css)
     !include(../css/customize-marx.css)
   </style>
 )
