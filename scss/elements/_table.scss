@@ -1,0 +1,44 @@
+// 表格
+
+table {
+  border-collapse: collapse;
+  counter-increment: table;
+  margin: $table-margin;
+  max-width: 100%;
+}
+
+thead {
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+
+tbody {
+  border-bottom: 1px solid #000;
+}
+
+tr {
+  &.header {
+    font-family: $font-family-sans-serif;
+    font-weight: bold;
+
+  }
+  &.odd {
+    background-color: transparent;
+  }
+  &.even {
+    background-color: transparent;
+  }
+}
+
+th,
+td {
+  border: $table-border;
+  padding: $table-cell-padding;
+  text-align: left;
+}
+
+caption {
+  caption-side: $caption-side;
+  font-weight: $caption-weight;
+  margin: $caption-margin;
+}

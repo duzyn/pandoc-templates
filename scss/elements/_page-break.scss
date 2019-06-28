@@ -1,0 +1,26 @@
+// 分页
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  page-break-after: avoid;
+  page-break-inside: avoid;
+}
+
+h1 {
+  page-break-before: always;
+}
+
+h1 + p,
+h2 + p,
+h3 + p {
+  page-break-before: avoid;
+}
+
+table,
+figure {
+  page-break-inside: avoid;
+}

@@ -1,0 +1,34 @@
+// 页眉
+
+@page {
+  // 左上方显示文档标题
+  @top-left {
+    content: "$if(title-prefix)$$title-prefix$ – $endif$$pagetitle$";
+    margin: 30pt 0 10pt 0;
+    font-size: $font-size-small;
+    font-family: $font-family-base;
+    color: #333;
+  }
+
+  // 右上方显示当前页所在的章节标题
+  @top-right {
+    content: string(chapterTitle);
+    margin: 30pt 0 10pt 0;
+    font-size: $font-size-small;
+    font-family: $font-family-base;
+    color: #333;
+  }
+}
+
+// 第一页是标题页，不显示页眉
+@page:first {
+  @top-left {
+    content: normal;
+    margin: 0;
+  }
+
+  @top-right {
+    content: normal;
+    margin: 0;
+  }
+}

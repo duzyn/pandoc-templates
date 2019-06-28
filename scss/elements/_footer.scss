@@ -1,0 +1,35 @@
+// 页脚
+
+@page {
+  // 左下角显示版权声明
+  @bottom-left {
+    margin: 10pt 0 30pt 0;
+    border-top: 0.25pt solid #666;
+    content: "$if(copyright)$$copyright$$endif$";
+    font-family: $font-family-base;
+    font-size: $font-size-small;
+    color: #333;
+  }
+
+  // 右下角显示当前页码
+  @bottom-right {
+    margin: 10pt 0 30pt 0;
+    border-top: 0.25pt solid #666;
+    content: counter(page);
+    font-family: $font-family-base;
+    font-size: $font-size-small;
+  }
+}
+
+// 第一页是标题页，不显示页脚
+@page :first {
+  @bottom-left {
+    content: normal;
+    margin: 0;
+  }
+
+  @bottom-right {
+    content: normal;
+    margin: 0;
+  }
+}

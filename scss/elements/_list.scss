@@ -1,0 +1,39 @@
+// 列表
+
+// 项目列表和有序列表
+ol,
+ul {
+  margin: 1em 0 1em 0;
+  padding-left: 2em;
+
+  ul,
+  ol {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  ol {
+    list-style-type: lower-roman;
+
+    ol {
+      list-style-type: lower-alpha;
+    }
+  }
+}
+
+// 定义列表
+dl {
+  padding: 0;
+}
+
+dt {
+  font-family: $font-family-sans-serif;
+  font-size: 1em;
+  margin-top: 1em;
+  padding: 0;
+}
+
+dd {
+  margin: 0 0 1em 0;
+  padding: 0 2em;
+}

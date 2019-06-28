@@ -1,0 +1,21 @@
+// 目录
+
+nav#TOC {
+    ul {
+      margin: 0;
+      padding: 0;
+      ul {
+        padding-left: 2em;
+      }
+      li {
+        list-style-type: none;
+        line-height: 2;
+        a {
+          text-decoration: none;
+          &::after {
+            content: leader(".") target-counter(attr(href), page);
+          }
+        }
+      }
+    }
+  }

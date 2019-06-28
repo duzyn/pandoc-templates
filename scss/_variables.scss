@@ -1,0 +1,53 @@
+// 页面整体排版
+
+// A4 纸大小: 210mm x 297mm
+$page-width: 210mm;
+$page-height: 297mm;
+$page-margin: 20mm 30mm 20mm 30mm;
+
+// 链接
+$link-reference-color: #333;
+$link-external-color: #06c;
+
+// 表格
+$table-margin: 1em 0;
+$table-cell-padding: 0.25em;
+$caption-weight: normal;
+$table-border: 0;
+
+// 图像
+$figure-margin: 1em 0;
+$caption-margin: 0 0 4pt;
+$caption-side: top;
+$figcaption-weight: $caption-weight;
+
+// 字体
+
+$font-family-sans-serif:  Arial, Simhei, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+$font-family-serif: 'Times New Roman', Simsun, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+$font-family-monospace: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace;
+$font-family-base: $font-family-serif;
+
+$font-size-base: 12pt;
+$font-size-small: 10pt;
+$font-size-code: 10pt;
+
+$line-height-base: 1.5;
+$hyphens-base: auto;
+$text-align-base: left;
+$paragraph-margin: 0 0 .5em;
+$paragraph-indent: 0;
+
+// 标题
+
+$headings-font-family: $font-family-sans-serif;
+$headings-font-weight: 700;
+$headings-hyphens: none;
+$headings-line-height: 1.25;
+
+$font-size-h1: 2em;
+$font-size-h2: 1.5;
+$font-size-h3: 1.2em;
+$font-size-h4: $font-size-h3;
+$font-size-h5: $font-size-h3;
+$font-size-h6: $font-size-h3;

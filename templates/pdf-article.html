@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html$if(lang)$ lang="$lang$" $endif$$if(dir)$ dir="$dir$" $endif$>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="generator" content="pandoc">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+        $for(author-meta)$
+        <meta name="author" content="$author-meta$">
+        $endfor$
+        $if(date-meta)$
+        <meta name="dcterms.date" content="$date-meta$">
+        $endif$
+        $if(keywords)$
+        <meta name="keywords" content="$for(keywords)$$keywords$$sep$, $endfor$">
+        $endif$
+        <title>$if(title-prefix)$$title-prefix$ – $endif$$pagetitle$</title>
+        <style>
+            code {
+                white-space: pre;
+            }
+        </style>
+        $if(quotes)$
+        <style>
+            q {
+                quotes: "“""”""‘""’";
+            }
+        </style>
+        $endif$
+        $if(highlighting-css)$
+        <style>
+            $highlighting-css$
+        </style>
+        $endif$
+        $for(css)$
+        <link rel="stylesheet" href="$css$">
+        $endfor$
+
+        <style>
+             @charset "UTF-8";
+@page {
+  size: 210mm 297mm;
+  margin: 20mm 30mm 20mm 30mm;
+}
+html {
+  font-size: 12pt;
+}
+
+body {
+  font-family: "Times New Roman", Simsun, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  text-align: left;
+  line-height: 1.5;
+}
+
+b,
+strong {
+  font-family: Arial, Simhei, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: normal;
+}
+
+small {
+  font-size: 10pt;
+}
+
+hr {
+  background-color: #000;
+  border: 0;
+  height: 1pt;
+  margin: 1em 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Arial, Simhei, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 700;
+  hyphens: none;
+  line-height: 1.25;
+}
+
+h1 {
+  string-set: chapterTitle content();
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.5;
+}
+
+h3 {
+  font-size: 1.2em;
+}
+
+h4 {
+  font-size: 1.2em;
+}
+
+h5 {
+  font-size: 1.2em;
+}
+
+h6 {
+  font-size: 1.2em;
+}
+
+p {
+  line-height: 1.5;
+  margin: 0 0 0.5em;
+  text-indent: 0;
+}
+
+a {
+  color: #06c;
+}
+
+a[href^="#"] {
+  color: #333;
+}
+
+code,
+pre {
+  font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace;
+  font-size: 10pt;
+}
+
+pre {
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+code {
+  font-weight: 400;
+  white-space: pre;
+  word-break: normal;
+}
+
+q::before {
+  content: "“";
+}
+q::after {
+  content: "”";
+}
+q > q::before {
+  content: "‘";
+}
+q > q::after {
+  content: "’";
+}
+
+ol,
+ul {
+  margin: 1em 0 1em 0;
+  padding-left: 2em;
+}
+ol ul,
+ol ol,
+ul ul,
+ul ol {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+ol ol,
+ul ol {
+  list-style-type: lower-roman;
+}
+ol ol ol,
+ul ol ol {
+  list-style-type: lower-alpha;
+}
+
+dl {
+  padding: 0;
+}
+
+dt {
+  font-family: Arial, Simhei, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 1em;
+  margin-top: 1em;
+  padding: 0;
+}
+
+dd {
+  margin: 0 0 1em 0;
+  padding: 0 2em;
+}
+
+table {
+  border-collapse: collapse;
+  counter-increment: table;
+  margin: 1em 0;
+  max-width: 100%;
+}
+
+thead {
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+
+tbody {
+  border-bottom: 1px solid #000;
+}
+
+tr.header {
+  font-family: Arial, Simhei, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: bold;
+}
+tr.odd {
+  background-color: transparent;
+}
+tr.even {
+  background-color: transparent;
+}
+
+th,
+td {
+  border: 0;
+  padding: 0.25em;
+  text-align: left;
+}
+
+caption {
+  caption-side: top;
+  font-weight: normal;
+  margin: 0 0 4pt;
+}
+
+figure {
+  margin: 1em 0;
+  text-align: center;
+}
+
+figcaption {
+  font-weight: normal;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@page {
+  @top-left {
+    content: "$if(title-prefix)$$title-prefix$ – $endif$$pagetitle$";
+    margin: 30pt 0 10pt 0;
+    font-size: 10pt;
+    font-family: "Times New Roman", Simsun, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    color: #333;
+  }
+  @top-right {
+    content: string(chapterTitle);
+    margin: 30pt 0 10pt 0;
+    font-size: 10pt;
+    font-family: "Times New Roman", Simsun, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    color: #333;
+  }
+}
+@page :first {
+  @top-left {
+    content: normal;
+    margin: 0;
+  }
+  @top-right {
+    content: normal;
+    margin: 0;
+  }
+}
+@page {
+  @bottom-left {
+    margin: 10pt 0 30pt 0;
+    border-top: 0.25pt solid #666;
+    content: "$if(copyright)$$copyright$$endif$";
+    font-family: "Times New Roman", Simsun, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 10pt;
+    color: #333;
+  }
+  @bottom-right {
+    margin: 10pt 0 30pt 0;
+    border-top: 0.25pt solid #666;
+    content: counter(page);
+    font-family: "Times New Roman", Simsun, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 10pt;
+  }
+}
+@page :first {
+  @bottom-left {
+    content: normal;
+    margin: 0;
+  }
+  @bottom-right {
+    content: normal;
+    margin: 0;
+  }
+}
+a.footnote-ref,
+a[id^=fnref] {
+  text-decoration: none;
+  font-size: 10pt;
+  line-height: none;
+}
+a.footnote-ref sup:before,
+a[id^=fnref] sup:before {
+  content: "[";
+}
+a.footnote-ref sup:after,
+a[id^=fnref] sup:after {
+  content: "]";
+}
+
+.footnotes li[role=doc-endnote] {
+  list-style-type: none;
+  counter-increment: reference;
+}
+.footnotes li[role=doc-endnote]::before {
+  content: "[" counter(reference) "]";
+  position: absolute;
+  display: inline-block;
+  margin-left: -2em;
+}
+
+a.footnote-back {
+  margin-left: 0.5em;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  page-break-after: avoid;
+  page-break-inside: avoid;
+}
+
+h1 {
+  page-break-before: always;
+}
+
+h1 + p,
+h2 + p,
+h3 + p {
+  page-break-before: avoid;
+}
+
+table,
+figure {
+  page-break-inside: avoid;
+}
+
+h1.title,
+p.subtitle,
+p.author,
+p.date {
+  text-align: center;
+}
+
+header {
+  display: table-cell;
+  position: relative;
+  width: 150mm;
+  height: 257mm;
+  vertical-align: middle;
+  padding: 0;
+}
+
+nav#TOC ul {
+  margin: 0;
+  padding: 0;
+}
+nav#TOC ul ul {
+  padding-left: 2em;
+}
+nav#TOC ul li {
+  list-style-type: none;
+  line-height: 2;
+}
+nav#TOC ul li a {
+  text-decoration: none;
+}
+nav#TOC ul li a::after {
+  content: leader(".") target-counter(attr(href), page);
+}
+
+/*# sourceMappingURL=pdf-article.css.map */
+
+        </style>
+
+        $if(math)$
+        $math$
+        $endif$
+        <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+        $for(header-includes)$
+        $header-includes$
+        $endfor$
+    </head>
+
+    <body>
+        <main>
+            <article>
+                <section>
+                    $for(include-before)$
+                    $include-before$
+                    $endfor$
+                    $if(title)$
+                    <header>
+                        <h1 class="title">$title$</h1>
+                        $if(subtitle)$
+                        <p class="subtitle">$subtitle$</p>
+                        $endif$
+                        $for(author)$
+                        <p class="author">$author$</p>
+                        $endfor$
+                        $if(date)$
+                        <p class="date">$date$</p>
+                        $endif$
+
+                    </header>
+                    $endif$
+                    $if(toc)$
+                    <nav id="$idprefix$TOC">
+                        $if(toctitle)$
+                        <h1 class="unnumbered">$toctitle$</h1>
+                        $endif$
+                        $toc$
+                    </nav>
+                    $endif$
+                    $body$
+                    $for(include-after)$
+                    $include-after$
+                    $endfor$
+                </section>
+            </article>
+        </main>
+    </body>
+
+    </html>

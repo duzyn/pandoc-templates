@@ -1,0 +1,15 @@
+// 图像
+
+figure {
+  margin: $figure-margin;
+  text-align: center;
+}
+
+figcaption {
+  font-weight: $figcaption-weight;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
