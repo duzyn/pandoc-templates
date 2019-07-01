@@ -3,7 +3,7 @@
 @page {
   // 左上方显示文档标题
   @top-left {
-    content: "$if(title-prefix)$$title-prefix$ – $endif$$pagetitle$";
+    content: string(docTitle);
     margin: 30pt 0 10pt 0;
     font-size: $font-size-small;
     font-family: $font-family-base;

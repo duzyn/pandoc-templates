@@ -4,4 +4,6 @@ p {
   line-height: $line-height-base;
   margin: $paragraph-margin;
   text-indent: $paragraph-indent;
+  orphans: 2;
+  widows: 2;
 }

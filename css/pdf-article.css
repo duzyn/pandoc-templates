@@ -8,14 +8,16 @@ html {
 }
 
 body {
-  font-family: "Times New Roman", Simsun, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Times New Roman", Simsun, "Noto Serif", "Noto Serif SC", Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   text-align: left;
   line-height: 1.5;
+  color: #000;
+  background: #fff;
 }
 
 b,
 strong {
-  font-family: Arial, Simhei, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: Arial, Simhei, "Noto Sans", "Noto Sans SC", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: normal;
 }
 
@@ -37,7 +39,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Arial, Simhei, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: Arial, Simhei, "Noto Sans", "Noto Sans SC", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 700;
   hyphens: none;
   line-height: 1.25;
@@ -72,19 +74,32 @@ p {
   line-height: 1.5;
   margin: 0 0 0.5em;
   text-indent: 0;
+  orphans: 2;
+  widows: 2;
 }
 
 a {
-  color: #06c;
+  color: #000;
+  word-wrap: break-word;
 }
 
 a[href^="#"] {
-  color: #333;
+  color: #000;
+}
+a[href^="#"]::after {
+  content: " (p." target-counter(attr(href, url), page) ") ";
+}
+
+a[href^="http:"]::after,
+a[href^="https:"]::after,
+a[href^="ftp:"]::after,
+a[href^="mailto:"]::after {
+  content: "(" attr(href) ") ";
 }
 
 code,
 pre {
-  font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace;
+  font-family: SFMono-Regular, "Noto Sans Mono", Consolas, Liberation Mono, Menlo, Courier, monospace;
   font-size: 10pt;
 }
 
@@ -138,7 +153,6 @@ dl {
 }
 
 dt {
-  font-family: Arial, Simhei, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 1em;
   margin-top: 1em;
   padding: 0;
@@ -166,7 +180,7 @@ tbody {
 }
 
 tr.header {
-  font-family: Arial, Simhei, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: Arial, Simhei, "Noto Sans", "Noto Sans SC", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: bold;
 }
 tr.odd {
@@ -199,23 +213,24 @@ figcaption {
 }
 
 img {
-  max-width: 100%;
+  max-width: 100% !important;
   height: auto;
+  border: 0;
 }
 
 @page {
   @top-left {
-    content: "$if(title-prefix)$$title-prefix$ – $endif$$pagetitle$";
+    content: string(docTitle);
     margin: 30pt 0 10pt 0;
     font-size: 10pt;
-    font-family: "Times New Roman", Simsun, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: "Times New Roman", Simsun, "Noto Serif", "Noto Serif SC", Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     color: #333;
   }
   @top-right {
     content: string(chapterTitle);
     margin: 30pt 0 10pt 0;
     font-size: 10pt;
-    font-family: "Times New Roman", Simsun, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: "Times New Roman", Simsun, "Noto Serif", "Noto Serif SC", Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     color: #333;
   }
 }
@@ -234,7 +249,7 @@ img {
     margin: 10pt 0 30pt 0;
     border-top: 0.25pt solid #666;
     content: "$if(copyright)$$copyright$$endif$";
-    font-family: "Times New Roman", Simsun, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: "Times New Roman", Simsun, "Noto Serif", "Noto Serif SC", Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-size: 10pt;
     color: #333;
   }
@@ -242,7 +257,7 @@ img {
     margin: 10pt 0 30pt 0;
     border-top: 0.25pt solid #666;
     content: counter(page);
-    font-family: "Times New Roman", Simsun, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: "Times New Roman", Simsun, "Noto Serif", "Noto Serif SC", Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-size: 10pt;
   }
 }
@@ -262,17 +277,22 @@ a[id^=fnref] {
   font-size: 10pt;
   line-height: none;
 }
-a.footnote-ref sup:before,
-a[id^=fnref] sup:before {
+a.footnote-ref sup::before,
+a[id^=fnref] sup::before {
   content: "[";
 }
-a.footnote-ref sup:after,
-a[id^=fnref] sup:after {
+a.footnote-ref sup::after,
+a[id^=fnref] sup::after {
   content: "]";
+}
+a.footnote-ref::after,
+a[id^=fnref]::after {
+  content: "";
 }
 
 .footnotes li[role=doc-endnote] {
   list-style-type: none;
+  display: block;
   counter-increment: reference;
 }
 .footnotes li[role=doc-endnote]::before {
@@ -286,6 +306,9 @@ a.footnote-back {
   margin-left: 0.5em;
   text-decoration: none;
 }
+a.footnote-back::after {
+  content: "";
+}
 
 h1,
 h2,
@@ -293,22 +316,27 @@ h3,
 h4,
 h5,
 h6 {
+  break-after: avoid;
+  break-inside: avoid;
   page-break-after: avoid;
   page-break-inside: avoid;
 }
 
 h1 {
+  break-before: always;
   page-break-before: always;
 }
 
 h1 + p,
 h2 + p,
 h3 + p {
+  break-before: avoid;
   page-break-before: avoid;
 }
 
 table,
 figure {
+  break-inside: avoid;
   page-break-inside: avoid;
 }
 
@@ -326,6 +354,10 @@ header {
   height: 257mm;
   vertical-align: middle;
   padding: 0;
+}
+
+h1.title {
+  string-set: docTitle content();
 }
 
 nav#TOC ul {

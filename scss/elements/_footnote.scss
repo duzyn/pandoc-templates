@@ -5,18 +5,23 @@ a[id^="fnref"] {
   text-decoration: none;
   font-size: $font-size-small;
   line-height: none;
-  sup:before {
+  sup::before {
     content: "[";
   }
-  sup:after {
+  sup::after {
     content: "]";
+  }
+  &::after {
+    content: "";
   }
 }
 
 .footnotes {
   li[role="doc-endnote"] {
-      list-style-type: none;
+    list-style-type: none;
+    display: block;
     counter-increment: reference;
+    // margin-left: 2em;
     &::before {
       content: "[" counter(reference) "]";
       position: absolute;
@@ -29,4 +34,7 @@ a[id^="fnref"] {
 a.footnote-back {
   margin-left: 0.5em;
   text-decoration: none;
+  &::after {
+    content: "";
+  }
 }

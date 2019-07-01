@@ -19,3 +19,9 @@ header {
 
   padding: 0;
 }
+
+// 将文档的标题存为变量，用在页眉页脚
+
+h1.title {
+  string-set: docTitle content();
+}

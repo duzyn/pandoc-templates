@@ -6,8 +6,8 @@ $page-height: 297mm;
 $page-margin: 20mm 30mm 20mm 30mm;
 
 // 链接
-$link-reference-color: #333;
-$link-external-color: #06c;
+$link-reference-color: #000;
+$link-external-color: #000;
 
 // 表格
 $table-margin: 1em 0;
@@ -23,9 +23,9 @@ $figcaption-weight: $caption-weight;
 
 // 字体
 
-$font-family-sans-serif:  Arial, Simhei, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-$font-family-serif: 'Times New Roman', Simsun, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-$font-family-monospace: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace;
+$font-family-sans-serif:  Arial, Simhei, 'Noto Sans', 'Noto Sans SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+$font-family-serif: 'Times New Roman', Simsun, 'Noto Serif', 'Noto Serif SC', Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+$font-family-monospace: SFMono-Regular, 'Noto Sans Mono', Consolas, Liberation Mono, Menlo, Courier, monospace;
 $font-family-base: $font-family-serif;
 
 $font-size-base: 12pt;

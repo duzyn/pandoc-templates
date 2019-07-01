@@ -2,8 +2,39 @@
 
 a {
   color: $link-external-color;
+  word-wrap: break-word;
 }
+
+// 内部链接（交叉引用）
 
 a[href^="#"] {
   color: $link-reference-color;
+
+  &::after {
+    content: " (p." target-counter(attr(href, url), page) ") ";
+  }
 }
+
+// 外部链接
+
+a[href^="http:"],
+a[href^="https:"],
+a[href^="ftp:"],
+a[href^="mailto:"] {
+  &::after {
+    content: "(" attr(href) ") ";
+  }
+}
+
+// 将链接显示为脚注
+
+// a:link:after,
+// a:visited:after {
+//     content: " ("attr(href) ") ";
+//     font-size: 90%;
+// }
+
+// html.noted a:link:after,
+// html.noted a:visited:after {
+//     content: '';
+// }
