@@ -11,7 +11,7 @@ a[href^="#"] {
   color: $link-reference-color;
 
   &::after {
-    content: " (p." target-counter(attr(href, url), page) ") ";
+    content: " (p. " target-counter(attr(href, url), page) ") ";
   }
 }
 

@@ -4,19 +4,17 @@
   // 左上方显示文档标题
   @top-left {
     content: string(docTitle);
-    margin: 30pt 0 10pt 0;
+    margin: 10mm 0 4mm 0;
     font-size: $font-size-small;
     font-family: $font-family-base;
-    color: #333;
   }
 
   // 右上方显示当前页所在的章节标题
   @top-right {
     content: string(chapterTitle);
-    margin: 30pt 0 10pt 0;
+    margin: 10mm 0 4mm 0;
     font-size: $font-size-small;
     font-family: $font-family-base;
-    color: #333;
   }
 }
 

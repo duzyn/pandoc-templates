@@ -1,0 +1,12 @@
+@page {
+  size: $page-width $page-height;
+  //   margin: $page-margin;
+}
+
+@page:left {
+  margin: 20mm 40mm 20mm 30mm;
+}
+
+@page:right {
+  margin: 20mm 30mm 20mm 40mm;
+}

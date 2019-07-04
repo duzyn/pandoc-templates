@@ -1,0 +1,25 @@
+// 页眉
+
+@page {
+  // 不显示页眉
+  @top-left {
+    content: normal
+  }
+
+  @top-right {
+    content: normal;
+  }
+}
+
+// 第一页是标题页，不显示页眉
+// @page:first {
+//   @top-left {
+//     content: normal;
+//     margin: 0;
+//   }
+
+//   @top-right {
+//     content: normal;
+//     margin: 0;
+//   }
+// }

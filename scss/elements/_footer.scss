@@ -3,17 +3,16 @@
 @page {
   // 左下角显示版权声明
   @bottom-left {
-    margin: 10pt 0 30pt 0;
+    margin: 4mm 0 10mm 0;
     border-top: 0.25pt solid #666;
     content: "$if(copyright)$$copyright$$endif$";
     font-family: $font-family-base;
     font-size: $font-size-small;
-    color: #333;
   }
 
   // 右下角显示当前页码
   @bottom-right {
-    margin: 10pt 0 30pt 0;
+    margin: 4mm 0 10mm 0;
     border-top: 0.25pt solid #666;
     content: counter(page);
     font-family: $font-family-base;

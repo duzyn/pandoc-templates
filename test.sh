@@ -7,16 +7,21 @@ aria2c -d css --allow-overwrite https://raw.githubusercontent.com/mblode/marx/ma
 aria2c -d css --allow-overwrite https://raw.githubusercontent.com/edwardtufte/tufte-css/gh-pages/tufte.css
 aria2c -d css --allow-overwrite https://raw.githubusercontent.com/edwardtufte/tufte-css/gh-pages/latex.css
 
+# 
 sass scss/pdf-article.scss css/pdf-article.css
+sass scss/pdf-report.scss  css/pdf-report.css
+sass scss/pdf-book.scss  css/pdf-book.css
 
 # Generate HTML templates
-pp -D TEMPLATE=github         pp/template.pp.html    > templates/github.html
-pp -D TEMPLATE=marx           pp/template.pp.html    > templates/marx.html
-pp -D TEMPLATE=tufte          pp/template.pp.html    > templates/tufte.html
-pp -D TEMPLATE=github-offline pp/template.pp.html    > templates/github-offline.html
-pp -D TEMPLATE=marx-offline   pp/template.pp.html    > templates/marx-offline.html
-pp -D TEMPLATE=tufte-offline  pp/template.pp.html    > templates/tufte-offline.html
-pp                            pp/pdf-article.pp.html > templates/pdf-article.html
+pp -D TEMPLATE=github         pp/template.pp.html > templates/github.html
+pp -D TEMPLATE=marx           pp/template.pp.html > templates/marx.html
+pp -D TEMPLATE=tufte          pp/template.pp.html > templates/tufte.html
+pp -D TEMPLATE=github-offline pp/template.pp.html > templates/github-offline.html
+pp -D TEMPLATE=marx-offline   pp/template.pp.html > templates/marx-offline.html
+pp -D TEMPLATE=tufte-offline  pp/template.pp.html > templates/tufte-offline.html
+pp -D TEMPLATE=pdf-article    pp/template.pp.html > templates/pdf-article.html
+pp -D TEMPLATE=pdf-report     pp/template.pp.html > templates/pdf-report.html
+pp -D TEMPLATE=pdf-book       pp/template.pp.html > templates/pdf-book.html
 
 # Update template tufte-handout.tex
 aria2c -d templates --allow-overwrite https://raw.githubusercontent.com/rstudio/tufte/master/inst/rmarkdown/templates/tufte_handout/resources/tufte-handout.tex
@@ -38,6 +43,12 @@ pandoc examples/MANUAL.md -o examples/MANUAL-marx.pdf -f markdown -t html -N --t
 
 # PDF Article
 pandoc examples/MANUAL.md -o examples/MANUAL-pdf-article.pdf -f markdown -t html --pdf-engine=prince -N --toc --template=pdf-article.html -V toctitle="Table of Contents"
+
+# PDF Report
+pandoc examples/MANUAL.md -o examples/MANUAL-pdf-report.pdf -f markdown -t html --pdf-engine=prince -N --toc --template=pdf-report.html -V toctitle="Table of Contents"
+
+# PDF Book
+pandoc examples/MANUAL.md -o examples/MANUAL-pdf-book.pdf -f markdown -t html --pdf-engine=prince -N --toc --template=pdf-book.html -V toctitle="Table of Contents"
 
 # Eisvogel
 # pandoc examples/MANUAL.md -o examples/MANUAL-eisvogel.pdf -f markdown --pdf-engine=xelatex -N --toc --template=eisvogel.tex -V titlepage=true -V toc-own-page=true

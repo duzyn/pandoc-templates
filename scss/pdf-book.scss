@@ -1,5 +1,5 @@
 @import 'variables';
-@import 'elements/page';
+@import 'elements/page_book';
 @import 'elements/html';
 @import 'elements/body';
 @import 'elements/heading';
@@ -10,9 +10,9 @@
 @import 'elements/list';
 @import 'elements/table';
 @import 'elements/figure';
-@import 'elements/header';
-@import 'elements/footer';
+@import 'elements/header_book';
+@import 'elements/footer_book';
 @import 'elements/footnote';
-@import 'elements/break_article';
-@import 'elements/metadata_article';
+@import 'elements/break_book';
+@import 'elements/metadata';
 @import 'elements/toc';
