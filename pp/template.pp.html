@@ -36,6 +36,10 @@
     <link rel="stylesheet" href="$css$">
     $endfor$
 
+    $if(icons)$
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    $endif$
+
     !ifeq(!TEMPLATE)(github)(
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/3.0.1/github-markdown.css">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Sans+SC|Noto+Serif|Noto+Serif+SC|Source+Code+Pro"

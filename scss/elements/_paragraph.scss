@@ -7,3 +7,10 @@ p {
   orphans: 2;
   widows: 2;
 }
+
+li p {
+  text-indent: 0;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

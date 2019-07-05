@@ -1,8 +1,7 @@
 // 页面整体排版
 
 // A4 纸大小: 210mm x 297mm
-$page-width: 210mm;
-$page-height: 297mm;
+$page-size: A4;
 $page-margin: 20mm 30mm 20mm 30mm;
 
 // 链接
@@ -23,9 +22,12 @@ $figcaption-weight: $caption-weight;
 
 // 字体
 
-$font-family-sans-serif:  Arial, Simhei, 'Noto Sans', 'Noto Sans SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-$font-family-serif: 'Times New Roman', Simsun, 'Noto Serif', 'Noto Serif SC', Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-$font-family-monospace: SFMono-Regular, 'Noto Sans Mono', Consolas, Liberation Mono, Menlo, Courier, monospace;
+$font-family-sans-serif: Arial, Simhei, "Noto Sans", "Noto Sans SC", -apple-system, BlinkMacSystemFont, "Segoe UI",
+  Helvetica, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$font-family-serif: "Times New Roman", Simsun, "Noto Serif", "Noto Serif SC", Palatino, "Palatino Linotype",
+  "Palatino LT STD", "Book Antiqua", Georgia, serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$font-family-monospace: SFMono-Regular, "Noto Sans Mono", "Courier New", Consolas, Liberation Mono, Menlo, Courier,
+  monospace;
 $font-family-base: $font-family-serif;
 
 $font-size-base: 12pt;
@@ -35,8 +37,8 @@ $font-size-code: 10pt;
 $line-height-base: 1.5;
 $hyphens-base: auto;
 $text-align-base: left;
-$paragraph-margin: 0 0 .5em;
-$paragraph-indent: 0;
+$paragraph-margin: 0 0 1em 0;
+$paragraph-indent: 2em;
 
 // 标题
 
@@ -45,9 +47,34 @@ $headings-font-weight: 700;
 $headings-hyphens: none;
 $headings-line-height: 1.25;
 
-$font-size-h1: 2em;
-$font-size-h2: 1.5;
-$font-size-h3: 1.2em;
-$font-size-h4: $font-size-h3;
-$font-size-h5: $font-size-h3;
-$font-size-h6: $font-size-h3;
+$font-size-h1: 28pt;
+$font-size-h2: 22pt;
+$font-size-h3: 18pt;
+$font-size-h4: 16pt;
+$font-size-h5: 14pt;
+$font-size-h6: 12pt;
+
+// 颜色
+
+$white: #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black: #000;
+
+$blue: #007bff;
+$indigo: #6610f2;
+$purple: #6f42c1;
+$pink: #e83e8c;
+$red: #dc3545;
+$orange: #fd7e14;
+$yellow: #ffc107;
+$green: #28a745;
+$teal: #20c997;
+$cyan: #17a2b8;
