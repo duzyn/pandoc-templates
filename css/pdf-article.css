@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @page {
   size: A4;
   margin: 20mm 30mm 20mm 30mm;
@@ -8,7 +7,7 @@ html {
 }
 
 body {
-  font-family: "Times New Roman", Simsun, "Noto Serif", "Noto Serif SC", Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Noto Serif", "Noto Serif SC", Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, "Times New Roman", serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   text-align: left;
   line-height: 1.5;
   color: #000;
@@ -17,8 +16,8 @@ body {
 
 b,
 strong {
-  font-family: Arial, Simhei, "Noto Sans", "Noto Sans SC", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-weight: normal;
+  font-family: "Noto Sans", "Noto Sans SC", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: bold;
 }
 
 small {
@@ -39,7 +38,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Arial, Simhei, "Noto Sans", "Noto Sans SC", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Noto Sans", "Noto Sans SC", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 700;
   hyphens: none;
   line-height: 1.25;
@@ -106,7 +105,7 @@ a[href^="mailto:"]::after {
 
 code,
 pre {
-  font-family: SFMono-Regular, "Noto Sans Mono", "Courier New", Consolas, Liberation Mono, Menlo, Courier, monospace;
+  font-family: "Noto Sans Mono", "Noto Sans Mono CJK SC", "Courier New", SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 10pt;
 }
 
@@ -139,19 +138,6 @@ code {
   /* Internet Explorer 5.5+ */
 }
 
-q::before {
-  content: "“";
-}
-q::after {
-  content: "”";
-}
-q > q::before {
-  content: "‘";
-}
-q > q::after {
-  content: "’";
-}
-
 ol,
 ul {
   margin: 1em 0 1em 0;
@@ -161,14 +147,8 @@ ol ul,
 ol ol,
 ul ul,
 ul ol {
-  margin-bottom: 0;
-  margin-top: 0;
-}
-ol ul li:last-child,
-ol ol li:last-child,
-ul ul li:last-child,
-ul ol li:last-child {
   margin-bottom: 1em;
+  margin-top: 0;
 }
 ol ol,
 ul ol {
@@ -211,7 +191,7 @@ tbody {
 }
 
 tr.header {
-  font-family: Arial, Simhei, "Noto Sans", "Noto Sans SC", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Noto Sans", "Noto Sans SC", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: bold;
 }
 tr.odd {
@@ -422,13 +402,13 @@ p span.fa {
     content: string(docTitle);
     margin: 10mm 0 4mm 0;
     font-size: 10pt;
-    font-family: "Times New Roman", Simsun, "Noto Serif", "Noto Serif SC", Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: "Noto Serif", "Noto Serif SC", Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, "Times New Roman", serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   }
   @top-right {
     content: string(chapterTitle);
     margin: 10mm 0 4mm 0;
     font-size: 10pt;
-    font-family: "Times New Roman", Simsun, "Noto Serif", "Noto Serif SC", Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: "Noto Serif", "Noto Serif SC", Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, "Times New Roman", serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   }
 }
 @page :first {
@@ -446,14 +426,14 @@ p span.fa {
     margin: 4mm 0 10mm 0;
     border-top: 0.25pt solid #666;
     content: "$if(copyright)$$copyright$$endif$";
-    font-family: "Times New Roman", Simsun, "Noto Serif", "Noto Serif SC", Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: "Noto Serif", "Noto Serif SC", Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, "Times New Roman", serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-size: 10pt;
   }
   @bottom-right {
     margin: 4mm 0 10mm 0;
     border-top: 0.25pt solid #666;
     content: counter(page);
-    font-family: "Times New Roman", Simsun, "Noto Serif", "Noto Serif SC", Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: "Noto Serif", "Noto Serif SC", Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, "Times New Roman", serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-size: 10pt;
   }
 }
@@ -542,6 +522,10 @@ h1.title {
   string-set: docTitle content();
 }
 
+nav#TOC {
+  column-count: 2;
+  column-gap: 12pt;
+}
 nav#TOC ul {
   margin: 0;
   padding: 0;
@@ -558,6 +542,21 @@ nav#TOC ul li a {
 }
 nav#TOC ul li a::after {
   content: leader(".") target-counter(attr(href), page);
+}
+
+@media screen {
+  .markdown-body {
+    box-sizing: border-box;
+    min-width: 200px;
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 45px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .markdown-body {
+    padding: 15px;
+  }
 }
 
 /*# sourceMappingURL=pdf-article.css.map */

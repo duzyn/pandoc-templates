@@ -21,13 +21,13 @@ $caption-side: top;
 $figcaption-weight: $caption-weight;
 
 // 字体
-
-$font-family-sans-serif: Arial, Simhei, "Noto Sans", "Noto Sans SC", -apple-system, BlinkMacSystemFont, "Segoe UI",
-  Helvetica, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-$font-family-serif: "Times New Roman", Simsun, "Noto Serif", "Noto Serif SC", Palatino, "Palatino Linotype",
-  "Palatino LT STD", "Book Antiqua", Georgia, serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-$font-family-monospace: SFMono-Regular, "Noto Sans Mono", "Courier New", Consolas, Liberation Mono, Menlo, Courier,
-  monospace;
+// Simhei, Simsun, 
+$font-family-sans-serif: "Noto Sans", "Noto Sans SC", -apple-system, BlinkMacSystemFont, "Segoe UI",
+  Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$font-family-serif: "Noto Serif", "Noto Serif SC", Palatino, "Palatino Linotype",
+  "Palatino LT STD", "Book Antiqua", Georgia, "Times New Roman", serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$font-family-monospace: "Noto Sans Mono", "Noto Sans Mono CJK SC", "Courier New", SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier,
+  monospace, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 $font-family-base: $font-family-serif;
 
 $font-size-base: 12pt;

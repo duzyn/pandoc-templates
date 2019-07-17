@@ -14,7 +14,7 @@
     $if(keywords)$
     <meta name="keywords" content="$for(keywords)$$keywords$$sep$, $endfor$">
     $endif$
-    <title>$if(title-prefix)$$title-prefix$ – $endif$$pagetitle$</title>
+    <title>$if(title-prefix)$$title-prefix$ 鈥?$endif$$pagetitle$</title>
     <style>
       code {
         white-space: pre;
@@ -23,7 +23,7 @@
     $if(quotes)$
     <style>
       q {
-        quotes: "“""”""‘""’";
+        quotes: "鈥?"鈥?"鈥?"鈥?;
       }
     </style>
     $endif$
@@ -37,7 +37,7 @@
     $endfor$
 
     $if(icons)$
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     $endif$
 
     
@@ -515,25 +515,9 @@ label.margin-toggle:not(.sidenote-number) {
         width: 100%;
     } 
 }
- .latex-sub, .latex-sup { text-transform: uppercase;
-                         font-size: smaller;
-                         position: relative; }
 
-.latex-sub { top: 0.2rem;
-             margin-left: -0.1667rem;
-             margin-right: -0.125rem; }
-
-.latex-sup { top: -0.2rem;
-             margin-left: -0.36rem;
-             margin-right: -0.15rem;
-             text-shadow: none; }
-
-.latex::selection, .latex span:not(.latex-sup)::selection { text-shadow: 0.03em 0 #b4d5fe, -0.03em 0 #b4d5fe, 0 0.03em #b4d5fe, 0 -0.03em #b4d5fe, 0.06em 0 #b4d5fe, -0.06em 0 #b4d5fe, 0.09em 0 #b4d5fe, -0.09em 0 #b4d5fe, 0.12em 0 #b4d5fe, -0.12em 0 #b4d5fe, 0.15em 0 #b4d5fe, -0.15em 0 #b4d5fe;
-                    background: #b4d5fe; }
-
-.latex::-moz-selection, .latex span:not(.latex-sup)::-moz-selection { text-shadow: 0.03em 0 #b4d5fe, -0.03em 0 #b4d5fe, 0 0.03em #b4d5fe, 0 -0.03em #b4d5fe, 0.06em 0 #b4d5fe, -0.06em 0 #b4d5fe, 0.09em 0 #b4d5fe, -0.09em 0 #b4d5fe, 0.12em 0 #b4d5fe, -0.12em 0 #b4d5fe, 0.15em 0 #b4d5fe, -0.15em 0 #b4d5fe;
-                         background: #b4d5fe; }
- pre {
+       
+       pre {
     font-size: 0.9rem;
     width: 52.5%;
     margin-left: 2.5%;
@@ -590,9 +574,9 @@ th {
           </header>
           $endif$
           $if(toc)$
+          <h1 class="unnumbered">$if(toctitle)$$toctitle$$else$Contents$endif$</h1>
           <nav id="$idprefix$TOC">
             $if(toctitle)$
-            <h1 class="unnumbered">$toctitle$</h1>
             $endif$
             $toc$
           </nav>

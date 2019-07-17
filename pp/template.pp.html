@@ -37,7 +37,7 @@
     $endfor$
 
     $if(icons)$
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     $endif$
 
     !ifeq(!TEMPLATE)(github)(
@@ -51,7 +51,8 @@
 
     !ifeq(!TEMPLATE)(github-offline)(
     <style>
-       !include(../css/github-markdown.css) !include(../css/pandoc.css)
+       !include(../css/github-markdown.css)
+       !include(../css/pandoc.css)
     </style>
     )
 
@@ -66,7 +67,8 @@
 
     !ifeq(!TEMPLATE)(marx-offline)(
     <style>
-       !include(../css/marx.css) !include(../css/pandoc.css)
+       !include(../css/marx.css)
+       !include(../css/pandoc.css)
     </style>
     )
 
@@ -80,7 +82,9 @@
 
     !ifeq(!TEMPLATE)(tufte-offline)(
     <style>
-       !include(../css/tufte.css) !include(../css/latex.css) !include(../css/customize-tufte.css)
+       !include(../css/tufte.css)
+       !include(../css/latex.css)
+       !include(../css/customize-tufte.css)
     </style>
     )
 
@@ -135,9 +139,9 @@
           </header>
           $endif$
           $if(toc)$
+          <h1 class="unnumbered">$if(toctitle)$$toctitle$$else$Contents$endif$</h1>
           <nav id="$idprefix$TOC">
             $if(toctitle)$
-            <h1 class="unnumbered">$toctitle$</h1>
             $endif$
             $toc$
           </nav>

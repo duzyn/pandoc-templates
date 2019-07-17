@@ -14,7 +14,7 @@
     $if(keywords)$
     <meta name="keywords" content="$for(keywords)$$keywords$$sep$, $endfor$">
     $endif$
-    <title>$if(title-prefix)$$title-prefix$ – $endif$$pagetitle$</title>
+    <title>$if(title-prefix)$$title-prefix$ 鈥?$endif$$pagetitle$</title>
     <style>
       code {
         white-space: pre;
@@ -23,7 +23,7 @@
     $if(quotes)$
     <style>
       q {
-        quotes: "“""”""‘""’";
+        quotes: "鈥?"鈥?"鈥?"鈥?;
       }
     </style>
     $endif$
@@ -37,7 +37,7 @@
     $endfor$
 
     $if(icons)$
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     $endif$
 
     
@@ -170,9 +170,9 @@ a.footnote-back {
           </header>
           $endif$
           $if(toc)$
+          <h1 class="unnumbered">$if(toctitle)$$toctitle$$else$Contents$endif$</h1>
           <nav id="$idprefix$TOC">
             $if(toctitle)$
-            <h1 class="unnumbered">$toctitle$</h1>
             $endif$
             $toc$
           </nav>

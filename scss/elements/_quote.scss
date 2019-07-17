@@ -1,21 +1,2 @@
 // 引用
 
-q {
-  &::before {
-    content: "“";
-  }
-
-  &::after {
-    content: "”";
-  }
-
-  > q {
-    &::before {
-      content: "‘";
-    }
-
-    &::after {
-      content: "’";
-    }
-  }
-}

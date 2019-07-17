@@ -8,12 +8,8 @@ ul {
 
   ul,
   ol {
-    margin-bottom: 0;
+    margin-bottom: 1em;
     margin-top: 0;
-
-    li:last-child {
-      margin-bottom: 1em;
-    }
   }
 
   ol {
