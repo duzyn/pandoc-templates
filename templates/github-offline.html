@@ -14,7 +14,7 @@
     $if(keywords)$
     <meta name="keywords" content="$for(keywords)$$keywords$$sep$, $endfor$">
     $endif$
-    <title>$if(title-prefix)$$title-prefix$ 鈥?$endif$$pagetitle$</title>
+    <title>$if(title-prefix)$$title-prefix$ – $endif$$pagetitle$</title>
     <style>
       code {
         white-space: pre;
@@ -23,7 +23,7 @@
     $if(quotes)$
     <style>
       q {
-        quotes: "鈥?"鈥?"鈥?"鈥?;
+        quotes: "“""”""‘""’";
       }
     </style>
     $endif$
@@ -1034,7 +1034,7 @@
 .markdown-body kbd,
 .markdown-body code,
 .markdown-body pre {
-  font-family: 'Noto Sans Mono',SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-family: 'Noto Sans Mono','Source Code Pro',SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
 }
 
 

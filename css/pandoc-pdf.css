@@ -14,8 +14,11 @@
     }
 }
 
+/* 使用 wkhtmltopdf 转换中文时，需将中文字体放在第一位 */
+
 .markdown-body {
-    font-family: 'Noto Serif', 'Noto Serif SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    font-family: 'Noto Serif CJK SC', 'Noto Serif', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    /* font-weight: 400; */
 }
 
 .markdown-body h1,
@@ -24,14 +27,14 @@
 .markdown-body h4,
 .markdown-body h5,
 .markdown-body h6 {
-    font-family: 'Noto Sans', 'Noto Sans SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-    font-weight: bold;
+    font-family: 'Noto Sans CJK SC', 'Noto Sans',-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    /* font-weight: 700; */
 }
 
 .markdown-body kbd,
 .markdown-body code,
 .markdown-body pre {
-  font-family: 'Noto Sans Mono',SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-family: 'Noto Sans Mono CJK SC','Noto Sans Mono','Source Code Pro',SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
 }
 
 
