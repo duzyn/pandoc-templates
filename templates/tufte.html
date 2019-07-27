@@ -37,45 +37,29 @@
     $endfor$
 
     $if(icons)$
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
     $endif$
 
-    
-
-    
-
-    
-
-    
-
-    <link rel="stylesheet" href="https://cdn.staticaly.com/gh/edwardtufte/tufte-css/v1.4/tufte.css">
-    <link rel="stylesheet" href="https://cdn.staticaly.com/gh/edwardtufte/tufte-css/v1.4/latex.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/edwardtufte/tufte-css@v1.7/tufte.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/edwardtufte/tufte-css@v1.7/latex.css">
     <style>
-       pre {
-    font-size: 0.9rem;
-    width: 52.5%;
-    margin-left: 2.5%;
-    overflow-x: auto;
-}
+      pre {
+        font-size: 0.9rem;
+        width: 52.5%;
+        margin-left: 2.5%;
+        overflow-x: auto;
+      }
 
-table {
-    border-top: 2px solid #111;
-    border-bottom: 2px solid #111;
-    font-size: 1.1rem;
-}
+      table {
+        border-top: 2px solid #111;
+        border-bottom: 2px solid #111;
+        font-size: 1.1rem;
+      }
 
-th {
-    border-bottom: 1px solid #111;
-}
+      th {
+        border-bottom: 1px solid #111;
+      }
     </style>
-
-    
-
-    
-
-    
-
-    
 
     $if(math)$
     $math$
@@ -89,41 +73,39 @@ th {
   </head>
 
   <body>
-    <main>
-      <article class="markdown-body">
-        <section>
-          $for(include-before)$
-          $include-before$
-          $endfor$
-          $if(title)$
-          <header>
-            <h1 class="title">$title$</h1>
-            $if(subtitle)$
-            <p class="subtitle">$subtitle$</p>
-            $endif$
-            $for(author)$
-            <p class="author">$author$</p>
-            $endfor$
-            $if(date)$
-            <p class="date">$date$</p>
-            $endif$
-          </header>
+    <article>
+      <section>
+        $for(include-before)$
+        $include-before$
+        $endfor$
+        $if(title)$
+        <header>
+          <h1 class="title">$title$</h1>
+          $if(subtitle)$
+          <p class="subtitle">$subtitle$</p>
           $endif$
-          $if(toc)$
-          <h1 class="unnumbered">$if(toctitle)$$toctitle$$else$Contents$endif$</h1>
-          <nav id="$idprefix$TOC">
-            $if(toctitle)$
-            $endif$
-            $toc$
-          </nav>
-          $endif$
-          $body$
-          $for(include-after)$
-          $include-after$
+          $for(author)$
+          <p class="author">$author$</p>
           $endfor$
-        </section>
-      </article>
-    </main>
+          $if(date)$
+          <p class="date">$date$</p>
+          $endif$
+        </header>
+        $endif$
+        $if(toc)$
+        <h1 class="unnumbered">$if(toctitle)$$toctitle$$else$Contents$endif$</h1>
+        <nav id="$idprefix$TOC">
+          $if(toctitle)$
+          $endif$
+          $toc$
+        </nav>
+        $endif$
+        $body$
+        $for(include-after)$
+        $include-after$
+        $endfor$
+      </section>
+    </article>
   </body>
 
   </html>
