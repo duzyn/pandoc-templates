@@ -1,6 +1,6 @@
-Set-Location examples
+cd examples
 
-Remove-Item *.*
+rm -r *.*
 
 # Update Pandoc MANUAL.txt
 aria2c -o MANUAL.md --allow-overwrite https://github.com/jgm/pandoc/raw/master/MANUAL.txt
@@ -20,4 +20,4 @@ pandoc MANUAL.md -o MANUAL-eisvogel.pdf -f markdown --pdf-engine=xelatex -N --to
 # EPUB
 pandoc MANUAL.md -o MANUAL.epub -f markdown -t epub -N --toc -V toctitle="Table of Contents"
 
-Set-Location ..
+cd ..

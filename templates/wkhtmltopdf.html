@@ -36,85 +36,92 @@
     <link rel="stylesheet" href="$css$">
     $endfor$
 
+    $if(icons)$
+    <link rel="stylesheet" href="https://unpkg.com/font-awesome@4.7.0/css/font-awesome.min.css">
+    $endif$
+
     <link rel="stylesheet" href="https://unpkg.com/github-markdown-css">
     <style>
-      /* Github Markdown */
+    /* Github Markdown */
+.markdown-body {
+  box-sizing: border-box;
+  min-width: 200px;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 45px;
+}
 
-      .markdown-body {
-        box-sizing: border-box;
-        min-width: 200px;
-        max-width: 980px;
-        margin: 0 auto;
-        padding: 45px;
-      }
+@media (max-width: 767px) {
+  .markdown-body {
+    padding: 15px;
+  }
+}
 
-      @media (max-width: 767px) {
-        .markdown-body {
-          padding: 15px;
-        }
-      }
+/* Use Chinese fonts */
+.markdown-body {
+  font-family: "Noto Serif", "Noto Serif CJK SC", "Source Han Serif SC", Georgia,
+    Times, "Times New Roman", serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+}
 
-      /* Use Chinese fonts */
-      .markdown-body {
-        font-family: 'Noto Serif CJK SC', 'Noto Serif', Georgia, Times, "Times New Roman", serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-      }
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  font-family: "Noto Sans", "Noto Sans CJK SC", "Source Han Sans SC",
+    "Microsoft Yahei UI", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+}
 
-      .markdown-body h1,
-      .markdown-body h2,
-      .markdown-body h3,
-      .markdown-body h4,
-      .markdown-body h5,
-      .markdown-body h6 {
-        font-family: 'Microsoft Yahei UI', 'Noto Sans CJK SC', 'Noto Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-      }
+.markdown-body kbd,
+.markdown-body code,
+.markdown-body pre {
+  font-family: "Noto Sans Mono", "Noto Sans Mono CJK SC", "Source Han Mono SC",
+    SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace;
+}
 
-      .markdown-body kbd,
-      .markdown-body code,
-      .markdown-body pre {
-        font-family: 'Noto Sans Mono CJK SC', 'Noto Sans Mono', SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace;
-      }
+/* Title Block */
+h1.title {
+  border-bottom: none;
+}
 
-      /* Title Block */
+h1.title,
+p.subtitle,
+p.author,
+p.date {
+  text-align: center;
+}
 
-      h1.title {
-        border-bottom: none;
-      }
+/* Table of Contents */
+nav {
+  padding: 2em 0;
+}
 
-      h1.title,
-      p.subtitle,
-      p.author,
-      p.date {
-        text-align: center;
-      }
+nav li {
+  list-style-type: none;
+}
 
-      /* Table of Contents */
+nav ul {
+  padding-left: 0;
+}
 
-      nav {
-        padding: 2em 0;
-      }
+nav ul ul {
+  margin-bottom: 0;
+  padding-left: 2em;
+}
 
-      nav li {
-        list-style-type: none;
-      }
+/* Footnotes */
+a.footnote-ref {
+  text-decoration: none;
+}
 
-      nav ul {
-        padding-left: 0;
-      }
+a.footnote-back {
+  margin-left: 0.5em;
+}
 
-      nav ul ul {
-        margin-bottom: 0;
-        padding-left: 2em;
-      }
-
-      /* Footnotes */
-
-      a.footnote-ref {
-        text-decoration: none;
-      }
-
-      a.footnote-back {
-        margin-left: 0.5em;
-      }
     </style>
 
     $if(math)$
@@ -128,7 +135,7 @@
     $endfor$
   </head>
 
-  <body$if(lang)$ lang="$lang$" $endif$>
+  <body>
     <article class="markdown-body">
       $for(include-before)$
       $include-before$
@@ -148,10 +155,8 @@
       </header>
       $endif$
       $if(toc)$
-      <h1 class="unnumbered">$if(toctitle)$$toctitle$$else$目录$endif$</h1>
       <nav id="$idprefix$TOC">
-        $if(toctitle)$
-        $endif$
+        $if(toctitle)$<h1 class="unnumbered">$toctitle$</h1>$endif$
         $toc$
       </nav>
       $endif$
@@ -160,6 +165,5 @@
       $include-after$
       $endfor$
     </article>
-    </body>
-
-    </html>
+  </body>
+</html>

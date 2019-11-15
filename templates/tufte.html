@@ -37,11 +37,11 @@
     $endfor$
 
     $if(icons)$
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/font-awesome@4.7.0/css/font-awesome.min.css">
     $endif$
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tufte-css/1.7/tufte.min.css">
-    <link rel="stylesheet" href="https://cdn.statically.io/gh/edwardtufte/tufte-css/v1.7/latex.css">
+    <link rel="stylesheet" href="https://www.unpkg.com/tufte-css/tufte.min.css">
+    <link rel="stylesheet" href="https://cdn.statically.io/gh/edwardtufte/tufte-css/v1.7.2/latex.css">
     <style>
       pre {
         font-size: 0.9rem;
@@ -93,10 +93,8 @@
         </header>
         $endif$
         $if(toc)$
-        <h1 class="unnumbered">$if(toctitle)$$toctitle$$else$目录$endif$</h1>
         <nav id="$idprefix$TOC">
-          $if(toctitle)$
-          $endif$
+          $if(toctitle)$<h1 class="unnumbered">$toctitle$</h1>$endif$
           $toc$
         </nav>
         $endif$
@@ -107,5 +105,4 @@
       </section>
     </article>
   </body>
-
-  </html>
+</html>

@@ -6,11 +6,17 @@
         {
             "label": "Test",
             "type": "shell",
-            "command": ".\\test.ps1",
+            "command": "sh test.sh",
             "group": {
                 "kind": "build",
                 "isDefault": true
             },
+            "problemMatcher": []
+        },
+        {
+            "label": "Build Templates",
+            "type": "shell",
+            "command": "sh build_templates.sh",
             "problemMatcher": []
         }
     ]
