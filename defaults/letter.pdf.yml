@@ -4,9 +4,8 @@ pdf-engine: wkhtmltopdf
 pdf-engine-opts:
   - "--footer-center"
   - "[page]"
+  - "--footer-font-name"
+  - "SourceSansPro"
+  - "--footer-font-size"
+  - "10"
 template: article.html
-# table-of-contents: false
-# toc-depth: 3
-# number-sections: true
-# variables:
-#   footer-html: includes/footer.html
