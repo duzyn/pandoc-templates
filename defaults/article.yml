@@ -1,0 +1,12 @@
+from: markdown+east_asian_line_breaks
+to: pdf
+pdf-engine: wkhtmltopdf
+pdf-engine-opts:
+  - "--footer-center"
+  - "[page]"
+template: article.html
+table-of-contents: true
+toc-depth: 3
+number-sections: true
+# variables:
+#   footer-html: includes/footer.html

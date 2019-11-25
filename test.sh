@@ -1,6 +1,7 @@
-cd examples
+#!/bin/bash
+cd ./examples || return
 
-rm -r *.*
+rm -r ./*.*
 
 # Update Pandoc MANUAL.txt
 aria2c -o MANUAL.md --allow-overwrite https://github.com/jgm/pandoc/raw/master/MANUAL.txt
