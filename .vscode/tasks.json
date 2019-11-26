@@ -14,9 +14,9 @@
             "problemMatcher": []
         },
         {
-            "label": "Build Templates",
+            "label": "Update Resource",
             "type": "shell",
-            "command": "sh build_templates.sh",
+            "command": "sh update_resourse.sh",
             "problemMatcher": []
         }
     ]

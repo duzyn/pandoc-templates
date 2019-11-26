@@ -1,0 +1,4 @@
+to: epub
+table-of-contents: true
+toc-depth: 2
+number-sections: true

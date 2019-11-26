@@ -1,0 +1,3 @@
+from: markdown+east_asian_line_breaks
+variables:
+  lang: zh-CN
