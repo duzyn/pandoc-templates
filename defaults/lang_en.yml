@@ -1,3 +1,4 @@
 from: markdown
 variables:
   lang: en
+  toc-title: Table of Contents

@@ -1,6 +1,7 @@
 #!/bin/bash
 
-# rm -r ./examples/*.*
+# shellcheck disable=SC1091
+source update_resource.sh
 
 # Github
 pandoc ./examples/MANUAL.md -o ./examples/MANUAL-github.html -d html5_github.yml -d lang_en.yml -d css_pandoc.yml
@@ -9,7 +10,10 @@ pandoc ./examples/MANUAL.md -o ./examples/MANUAL-github.html -d html5_github.yml
 pandoc ./examples/MANUAL.md -o ./examples/MANUAL-marx.html -d html5_marx.yml -d lang_en.yml -d css_pandoc.yml
 
 # wkhtmltopdf
-pandoc ./examples/MANUAL.md -o ./examples/MANUAL-wkhtmltopdf.pdf -d html5_github.yml -d lang_en.yml -d css_pandoc.yml -d pdf_article.yml
+pandoc ./examples/MANUAL.md -o ./examples/MANUAL-wkhtmltopdf.pdf -d html5_github.yml -d lang_en.yml -d css_pandoc.yml -d pdf_wkhtmltopdf.yml
+
+# weasyprint
+pandoc ./examples/MANUAL.md -o ./examples/MANUAL-weasyprint.pdf -d html5_github.yml -d lang_en.yml -d css_pandoc.yml -d pdf_weasyprint.yml
 
 # Eisvogel
 pandoc ./examples/MANUAL.md -o ./examples/MANUAL-eisvogel.pdf -d latex_eisvogel.yml -d lang_en.yml

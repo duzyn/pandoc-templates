@@ -1,0 +1,97 @@
+from: markdown+east_asian_line_breaks
+to: pdf
+pdf-engine: weasyprint
+pdf-engine-opts:
+  - "--verbose"
+table-of-contents: true
+variables:
+  lang: zh-CN
+  toc-title: 目录
+  header-includes: |
+    <style>
+      @page {
+        size: A4;  
+        margin: 25mm;
+      }
+
+      @page:first {
+        size: A4;  
+        margin: 0;
+      }
+
+      @page { 
+        @bottom-center { 
+            margin: 10pt 0 30pt 0;
+            content: counter(page);
+            font-size: 9pt;
+        }
+      }
+
+      /* first page */
+      @page:first {
+        @bottom-center {
+          content: normal;
+          margin: 0;
+        }
+      }
+
+      img {
+        max-width: 100%;
+      }
+
+      body {
+        font-family: 'Source Serif Pro', 'Source Han Serif', serif;
+        line-height: 1.5;
+        font-size: 10pt;
+      }
+
+      h1, h2, h3, h4, h5, h6 {
+        font-family: 'Source Sans Pro', 'Source Han Sans', sans-serif;
+      }
+
+      kbd,
+      code,
+      pre {
+        font-family: "Noto Sans Mono", "Noto Sans Mono CJK SC", "Source Han Mono SC",
+          SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace;
+      }
+
+      /* Title Block */
+      h1.title {
+        border-bottom: none;
+      }
+
+      h1.title,
+      p.subtitle,
+      p.author,
+      p.date {
+        text-align: center;
+      }
+
+      /* Table of Contents */
+      nav {
+        padding: 2em 0;
+      }
+
+      nav li {
+        list-style-type: none;
+      }
+
+      nav ul {
+        padding-left: 0;
+      }
+
+      nav ul ul {
+        margin-bottom: 0;
+        padding-left: 2em;
+      }
+
+      /* Footnotes */
+      a.footnote-ref {
+        text-decoration: none;
+      }
+
+      a.footnote-back {
+        margin-left: 0.5em;
+      }
+    </style>
