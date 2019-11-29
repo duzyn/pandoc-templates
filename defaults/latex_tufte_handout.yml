@@ -1,8 +1,9 @@
+from: markdown+east_asian_line_breaks
 to: pdf
 pdf-engine: xelatex
-template: tufte-handout.latex
+template: tufte-handout.tex
 listings: true
 table-of-contents: true
 number-sections: true
 variables:
-  documentclass: article
+  documentclass: tufte-handout

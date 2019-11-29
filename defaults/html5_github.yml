@@ -1,7 +1,92 @@
+from: markdown+east_asian_line_breaks
 to: html5
 standalone: true
 css: 
 - https://unpkg.com/github-markdown-css
+table-of-contents: true
 variables:
+  lang: zh-CN
+  toc-title: 目录
   include-before: <article class='markdown-body'>
   include-after: </article>
+  header-includes: |
+    <style>
+      /* Github Markdown */
+      .markdown-body {
+        box-sizing: border-box;
+        min-width: 200px;
+        max-width: 980px;
+        margin: 0 auto;
+        padding: 45px;
+      }
+
+      @media (max-width: 767px) {
+        .markdown-body {
+          padding: 15px;
+        }
+      }
+
+      /* Use Chinese fonts */
+      .markdown-body {
+        font-family: "Source Serif Pro", "Source Han Serif SC", Georgia,
+          Times, "Times New Roman", serif, "Apple Color Emoji", "Segoe UI Emoji",
+          "Segoe UI Symbol";
+      }
+
+      .markdown-body h1,
+      .markdown-body h2,
+      .markdown-body h3,
+      .markdown-body h4,
+      .markdown-body h5,
+      .markdown-body h6 {
+        font-family: "Source Sans Pro", "Source Han Sans SC",
+          "Microsoft Yahei UI", -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+          "Segoe UI Symbol";
+      }
+
+      .markdown-body kbd,
+      .markdown-body code,
+      .markdown-body pre {
+        font-family: "Source Code Pro", "Source Han Mono SC", Consolas, Menlo, Courier, monospace;
+      }
+
+      /* Title Block */
+      h1.title {
+        border-bottom: none;
+      }
+
+      h1.title,
+      p.subtitle,
+      p.author,
+      p.date {
+        text-align: center;
+      }
+
+      /* Table of Contents */
+      nav {
+        padding: 2em 0;
+      }
+
+      nav li {
+        list-style-type: none;
+      }
+
+      nav ul {
+        padding-left: 0;
+      }
+
+      nav ul ul {
+        margin-bottom: 0;
+        padding-left: 2em;
+      }
+
+      /* Footnotes */
+      a.footnote-ref {
+        text-decoration: none;
+      }
+
+      a.footnote-back {
+        margin-left: 0.5em;
+      }
+    </style>

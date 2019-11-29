@@ -1,9 +1,11 @@
 from: markdown+east_asian_line_breaks
 to: pdf
 pdf-engine: weasyprint
-pdf-engine-opts:
-  - "--verbose"
+# pdf-engine-opts:
+  # - "--verbose"
 table-of-contents: true
+number-sections: true
+shift-heading-level-by: -1
 variables:
   lang: zh-CN
   toc-title: 目录
@@ -14,11 +16,6 @@ variables:
         margin: 25mm;
       }
 
-      @page:first {
-        size: A4;  
-        margin: 0;
-      }
-
       @page { 
         @bottom-center { 
             margin: 10pt 0 30pt 0;
@@ -27,7 +24,7 @@ variables:
         }
       }
 
-      /* first page */
+      /* 封面页不显示页数 */
       @page:first {
         @bottom-center {
           content: normal;
@@ -43,24 +40,22 @@ variables:
         font-family: 'Source Serif Pro', 'Source Han Serif', serif;
         line-height: 1.5;
         font-size: 10pt;
+        box-sizing: border-box;
       }
 
       h1, h2, h3, h4, h5, h6 {
         font-family: 'Source Sans Pro', 'Source Han Sans', sans-serif;
+        line-height: 1.2;
+
       }
 
       kbd,
       code,
       pre {
-        font-family: "Noto Sans Mono", "Noto Sans Mono CJK SC", "Source Han Mono SC",
-          SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace;
+        font-family: 'Source Code Pro', "Source Han Mono SC", Consolas, Menlo, Courier, monospace;
       }
 
       /* Title Block */
-      h1.title {
-        border-bottom: none;
-      }
-
       h1.title,
       p.subtitle,
       p.author,
@@ -68,7 +63,7 @@ variables:
         text-align: center;
       }
 
-      /* Table of Contents */
+      /* 目录 */
       nav {
         padding: 2em 0;
       }
@@ -86,12 +81,52 @@ variables:
         padding-left: 2em;
       }
 
-      /* Footnotes */
+      nav a{
+        text-decoration: none;
+      }
+
+      /* 页脚 */
       a.footnote-ref {
         text-decoration: none;
       }
 
       a.footnote-back {
         margin-left: 0.5em;
+      }
+
+      /* 表格 */
+      table {
+        display: block;
+        overflow: auto;
+        width: 100%;
+        border-collapse: collapse;
+        border-spacing: 0;
+        border-top: 2px solid #333;
+        border-bottom: 2px solid #333;
+      }
+      thead th {
+        border-bottom: 1px solid #333;
+      }
+      th, td {
+        padding: 0.5em;
+      }
+
+      /* 图像 */
+      figure {
+        margin-left: 0;
+        margin-right: 0;
+      }
+
+      /* 列表 */
+      ol ol,
+      ul ol {
+        list-style-type: lower-roman;
+      }
+
+      ol ol ol,
+      ol ul ol,
+      ul ol ol,
+      ul ul ol {
+        list-style-type: lower-alpha;
       }
     </style>

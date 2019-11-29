@@ -4,19 +4,13 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "Test",
+            "label": "Build",
             "type": "shell",
-            "command": "sh test.sh",
+            "command": "sh build.sh",
             "group": {
                 "kind": "build",
                 "isDefault": true
             },
-            "problemMatcher": []
-        },
-        {
-            "label": "Update Resource",
-            "type": "shell",
-            "command": "sh update_resourse.sh",
             "problemMatcher": []
         }
     ]
