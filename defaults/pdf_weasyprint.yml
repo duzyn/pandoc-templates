@@ -1,26 +1,28 @@
 from: markdown+east_asian_line_breaks
 to: pdf
+template: pdf.html5
 pdf-engine: weasyprint
 # pdf-engine-opts:
   # - "--verbose"
-table-of-contents: true
-number-sections: true
+# table-of-contents: true
+# number-sections: true
 shift-heading-level-by: -1
 variables:
   lang: zh-CN
   toc-title: 目录
   header-includes: |
     <style>
+    @media print {
       @page {
-        size: A4;  
+        size: A4;
         margin: 25mm;
       }
 
-      @page { 
-        @bottom-center { 
-            margin: 10pt 0 30pt 0;
-            content: counter(page);
-            font-size: 9pt;
+      @page {
+        @bottom-center {
+          margin: 10pt 0 30pt 0;
+          content: counter(page);
+          font-size: 9pt;
         }
       }
 
@@ -32,27 +34,34 @@ variables:
         }
       }
 
-      img {
-        max-width: 100%;
-      }
 
       body {
-        font-family: 'Source Serif Pro', 'Source Han Serif', serif;
+        font-family: "Source Serif Pro", "Source Han Serif", serif;
+        font-style: normal;
+        font-weight: 400;
         line-height: 1.5;
         font-size: 10pt;
         box-sizing: border-box;
+        color: #333;
       }
 
-      h1, h2, h3, h4, h5, h6 {
-        font-family: 'Source Sans Pro', 'Source Han Sans', sans-serif;
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "Source Sans Pro", "Source Han Sans", sans-serif;
+        font-style: normal;
+        font-weight: 500;
         line-height: 1.2;
-
       }
 
       kbd,
       code,
       pre {
-        font-family: 'Source Code Pro', "Source Han Mono SC", Consolas, Menlo, Courier, monospace;
+        font-family: "Source Code Pro", "Source Han Mono SC", Consolas, Menlo,
+          Courier, monospace;
       }
 
       /* Title Block */
@@ -81,7 +90,7 @@ variables:
         padding-left: 2em;
       }
 
-      nav a{
+      nav a {
         text-decoration: none;
       }
 
@@ -107,7 +116,8 @@ variables:
       thead th {
         border-bottom: 1px solid #333;
       }
-      th, td {
+      th,
+      td {
         padding: 0.5em;
       }
 
@@ -115,6 +125,10 @@ variables:
       figure {
         margin-left: 0;
         margin-right: 0;
+      }
+
+      img {
+        max-width: 100%;
       }
 
       /* 列表 */
@@ -129,4 +143,5 @@ variables:
       ul ul ol {
         list-style-type: lower-alpha;
       }
+    }
     </style>

@@ -1,5 +1,6 @@
 from: markdown+east_asian_line_breaks
 to: pdf
+template: pdf.html5
 pdf-engine: wkhtmltopdf
 pdf-engine-opts:
   - "--footer-center"
