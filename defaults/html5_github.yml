@@ -2,7 +2,7 @@ from: markdown+east_asian_line_breaks
 to: html5
 standalone: true
 css: 
-- https://unpkg.com/github-markdown-css
+  - https://unpkg.com/github-markdown-css
 table-of-contents: true
 variables:
   lang: zh-CN

@@ -2,8 +2,8 @@ from: markdown+east_asian_line_breaks
 to: html5
 standalone: true
 css: 
-- https://www.unpkg.com/tufte-css/tufte.min.css
-- https://cdn.statically.io/gh/edwardtufte/tufte-css/v1.7.2/latex.css
+  - https://www.unpkg.com/tufte-css/tufte.min.css
+  - https://cdn.statically.io/gh/edwardtufte/tufte-css/v1.7.2/latex.css
 variables:
   include-before: <article>
   include-after: </article>

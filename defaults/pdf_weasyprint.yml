@@ -6,7 +6,7 @@ pdf-engine: weasyprint
   # - "--verbose"
 # table-of-contents: true
 # number-sections: true
-shift-heading-level-by: -1
+# shift-heading-level-by: -1
 variables:
   lang: zh-CN
   toc-title: 目录
@@ -25,15 +25,6 @@ variables:
           font-size: 9pt;
         }
       }
-
-      /* 封面页不显示页数 */
-      @page:first {
-        @bottom-center {
-          content: normal;
-          margin: 0;
-        }
-      }
-
 
       body {
         font-family: "Source Serif Pro", "Source Han Serif", serif;
@@ -64,6 +55,12 @@ variables:
           Courier, monospace;
       }
 
+      /* Links */
+      a {
+        text-decoration: none;
+        color: #06c;
+      }
+
       /* Title Block */
       h1.title,
       p.subtitle,
@@ -72,7 +69,7 @@ variables:
         text-align: center;
       }
 
-      /* 目录 */
+      /* Table of Contents */
       nav {
         padding: 2em 0;
       }
@@ -94,7 +91,7 @@ variables:
         text-decoration: none;
       }
 
-      /* 页脚 */
+      /* Footnotes */
       a.footnote-ref {
         text-decoration: none;
       }
@@ -103,7 +100,7 @@ variables:
         margin-left: 0.5em;
       }
 
-      /* 表格 */
+      /* Tables */
       table {
         display: block;
         overflow: auto;
@@ -121,7 +118,7 @@ variables:
         padding: 0.5em;
       }
 
-      /* 图像 */
+      /* Figure and Images */
       figure {
         margin-left: 0;
         margin-right: 0;
@@ -131,7 +128,21 @@ variables:
         max-width: 100%;
       }
 
-      /* 列表 */
+      /* Lists */
+      ol, ul {
+        padding-left: 2em;
+        margin-left: 0;
+      }
+
+      dt {
+        font-weight: 700;
+      }
+
+      dd {
+        padding-left: 2em;
+        margin-left: 0;
+      }
+
       ol ol,
       ul ol {
         list-style-type: lower-roman;

@@ -12,19 +12,19 @@ wget -P ./templates -N https://raw.githubusercontent.com/Wandmalfarbe/pandoc-lat
 wget -P ./templates -N https://raw.githubusercontent.com/rstudio/tufte/master/inst/rmarkdown/templates/tufte_handout/resources/tufte-handout.tex
 
 # Github
-pandoc ./examples/MANUAL.txt -o ./examples/MANUAL-github.html -d html5_github.yml
+pandoc ./examples/MANUAL.txt -o ./examples/MANUAL-github.html -d html5_github.yml -M lang=en
 
 # Marx
-pandoc ./examples/MANUAL.txt -o ./examples/MANUAL-marx.html -d html5_marx.yml
+pandoc ./examples/MANUAL.txt -o ./examples/MANUAL-marx.html -d html5_marx.yml -M lang=en
 
 # wkhtmltopdf
-pandoc ./examples/MANUAL.txt -o ./examples/MANUAL-wkhtmltopdf.pdf -d pdf_wkhtmltopdf.yml
+pandoc ./examples/MANUAL.txt -o ./examples/MANUAL-wkhtmltopdf.pdf -d pdf_wkhtmltopdf.yml -M lang=en
 
 # weasyprint
-# pandoc ./examples/MANUAL.txt -o ./examples/MANUAL-weasyprint.pdf -d pdf_weasyprint.yml
+# pandoc ./examples/MANUAL.txt -o ./examples/MANUAL-weasyprint.pdf -d pdf_weasyprint.yml -M lang=en
 
 # Eisvogel
-# pandoc ./examples/MANUAL.txt -o ./examples/MANUAL-eisvogel.pdf -d latex_eisvogel.yml
+# pandoc ./examples/MANUAL.txt -o ./examples/MANUAL-eisvogel.pdf -d latex_eisvogel.yml -M lang=en
 
 # EPUB
-pandoc ./examples/MANUAL.txt -o ./examples/MANUAL.epub -d epub_ebook.yml
+pandoc ./examples/MANUAL.txt -o ./examples/MANUAL.epub -d epub_ebook.yml -M lang=en
