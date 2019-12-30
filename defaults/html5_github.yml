@@ -5,8 +5,6 @@ css:
   - https://unpkg.com/github-markdown-css
 table-of-contents: true
 variables:
-  lang: zh-CN
-  toc-title: 目录
   include-before: <article class='markdown-body'>
   include-after: </article>
   header-includes: |

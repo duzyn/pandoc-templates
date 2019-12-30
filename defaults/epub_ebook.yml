@@ -3,6 +3,3 @@ to: epub
 table-of-contents: true
 toc-depth: 2
 number-sections: true
-variables:
-  lang: zh-CN
-  toc-title: 目录

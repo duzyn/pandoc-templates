@@ -6,6 +6,6 @@ listings: true
 table-of-contents: true
 number-sections: true
 variables:
-  documentclass: ctexart
+  documentclass: article
   titlepage: true
   toc-own-page: true
