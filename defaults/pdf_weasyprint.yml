@@ -4,9 +4,9 @@ template: pdf.html5
 pdf-engine: weasyprint
 # pdf-engine-opts:
   # - "--verbose"
-# table-of-contents: true
-# number-sections: true
-# shift-heading-level-by: -1
+table-of-contents: true
+number-sections: true
+shift-heading-level-by: -1
 variables:
   header-includes: |
     <style>
