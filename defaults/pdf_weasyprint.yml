@@ -7,6 +7,9 @@ pdf-engine: weasyprint
 table-of-contents: true
 number-sections: true
 shift-heading-level-by: -1
+html-math-method:
+  method: mathjax
+  url: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
 variables:
   header-includes: |
     <style>
