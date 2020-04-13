@@ -3,13 +3,13 @@
 rm -rf ./examples/MANUAL-*.*
 
 # Update Pandoc MANUAL.txt
-wget -P ./examples -N https://raw.githubusercontent.com/jgm/pandoc/master/MANUAL.txt
+wget -P ./examples -N https://cdn.jsdelivr.net/gh/jgm/pandoc/MANUAL.txt
 
 # Update Eisvogel LaTeX template
-wget -P ./templates -N https://raw.githubusercontent.com/Wandmalfarbe/pandoc-latex-template/master/eisvogel.tex
+# wget -P ./templates -N https://raw.githubusercontent.com/Wandmalfarbe/pandoc-latex-template/master/eisvogel.tex
 
 # Update Tufte Handout LaTeX template
-wget -P ./templates -N https://raw.githubusercontent.com/rstudio/tufte/master/inst/rmarkdown/templates/tufte_handout/resources/tufte-handout.tex
+# wget -P ./templates -N https://raw.githubusercontent.com/rstudio/tufte/master/inst/rmarkdown/templates/tufte_handout/resources/tufte-handout.tex
 
 # Github
 pandoc ./examples/MANUAL.txt -o ./examples/MANUAL-github.html -d html5_github.yml

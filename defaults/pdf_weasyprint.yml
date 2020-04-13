@@ -1,12 +1,14 @@
 from: markdown+east_asian_line_breaks
 to: pdf
-template: pdf.html5
 pdf-engine: weasyprint
 # pdf-engine-opts:
   # - "--verbose"
 table-of-contents: true
 number-sections: true
 shift-heading-level-by: -1
+css: 
+  - https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&display=swap
+  - https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700&display=swap
 html-math-method:
   method: mathjax
   url: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
@@ -28,7 +30,7 @@ variables:
       }
 
       body {
-        font-family: "Source Serif Pro", "Source Han Serif", serif;
+        font-family: "Source Serif Pro", "Noto Serif SC", serif;
         font-style: normal;
         font-weight: 400;
         line-height: 1.5;
@@ -43,7 +45,7 @@ variables:
       h4,
       h5,
       h6 {
-        font-family: "Source Sans Pro", "Source Han Sans", sans-serif;
+        font-family: "Source Sans Pro", "Noto Sans SC", sans-serif;
         font-style: normal;
         font-weight: 500;
         line-height: 1.2;
@@ -52,7 +54,7 @@ variables:
       kbd,
       code,
       pre {
-        font-family: "Source Code Pro", "Source Han Mono SC", Consolas, Menlo,
+        font-family: "Source Code Pro", Consolas, Menlo,
           Courier, monospace;
       }
 
