@@ -9,7 +9,7 @@ pdf-engine-opts:
   - "--footer-font-size"
   - "10"
 css: 
-  - https://unpkg.com/github-markdown-css
+  - https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.css
   - https://cdn.jsdelivr.net/gh/duzyn/pandoc-templates/markdown.css
 table-of-contents: true
 number-sections: true
