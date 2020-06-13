@@ -1,8 +1,0 @@
-from: markdown+east_asian_line_breaks
-to: html5
-standalone: true
-css: https://cdn.jsdelivr.net/gh/duzyn/duzyn.github.io/assets/css/blog.css
-variables:
-  header-includes: <script src='https://cdn.jsdelivr.net/npm/html5media@1.2.1/dist/api/1.2.1/html5media.min.js'></script>
-  include-before: <article><section>
-  include-after: </section></article>

@@ -1,4 +1,4 @@
-from: markdown+east_asian_line_breaks
+from: markdown
 to: pdf
 pdf-engine: xelatex
 template: https://cdn.jsdelivr.net/gh/Wandmalfarbe/pandoc-latex-template/eisvogel.tex

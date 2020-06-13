@@ -1,8 +1,8 @@
-from: markdown+east_asian_line_breaks
+from: markdown
 to: html5
 standalone: true
-css: 
-  - https://unpkg.com/marx-css/css/marx.min.css
+css:
+  - https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.css
   - https://cdn.jsdelivr.net/gh/duzyn/pandoc-templates/markdown.css
 table-of-contents: true
 variables:

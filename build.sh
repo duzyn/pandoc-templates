@@ -9,34 +9,34 @@ wget -P ./examples \
 # Github
 pandoc ./examples/MANUAL.txt \
     -o ./examples/MANUAL-github.html \
-    -d ./defaults/html5_github.yml
+    -d ./defaults/github.yml
 
 # Marx
 pandoc ./examples/MANUAL.txt \
     -o ./examples/MANUAL-marx.html \
-    -d ./defaults/html5_marx.yml
+    -d ./defaults/marx.yml
 
 # Tufte
 pandoc ./examples/MANUAL.txt \
     -o ./examples/MANUAL-tufte.html \
-    -d ./defaults/html5_tufte.yml
+    -d ./defaults/tufte.yml
 
 # Eisvogel
 pandoc ./examples/MANUAL.txt \
     -o ./examples/MANUAL-eisvogel.pdf \
-    -d ./defaults/latex_eisvogel.yml
+    -d ./defaults/eisvogel.yml
 
 # weasyprint
 pandoc ./examples/MANUAL.txt \
     -o ./examples/MANUAL-weasyprint.pdf \
-    -d ./defaults/pdf_weasyprint.yml
+    -d ./defaults/weasyprint.yml
 
 # wkhtmltopdf
 pandoc ./examples/MANUAL.txt \
     -o ./examples/MANUAL-wkhtmltopdf.pdf \
-    -d ./defaults/pdf_wkhtmltopdf.yml
+    -d ./defaults/wkhtmltopdf.yml
 
 # EPUB
 pandoc ./examples/MANUAL.txt \
     -o ./examples/MANUAL.epub \
-    -d ./defaults/epub_ebook.yml
+    -d ./defaults/epub.yml

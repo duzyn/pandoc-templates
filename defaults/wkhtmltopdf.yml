@@ -1,0 +1,14 @@
+from: markdown
+to: pdf
+pdf-engine: wkhtmltopdf
+pdf-engine-opts:
+  - "--footer-center"
+  - "[page]"
+  - "--footer-font-name"
+  - "Noto Sans"
+  - "--footer-font-size"
+  - "10"
+css: 
+  - https://cdn.jsdelivr.net/npm/marx-css@3.0.7/css/marx.min.css
+table-of-contents: true
+number-sections: true

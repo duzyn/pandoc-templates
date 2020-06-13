@@ -1,4 +1,4 @@
-from: markdown+east_asian_line_breaks
+from: markdown
 to: epub
 table-of-contents: true
 toc-depth: 2
