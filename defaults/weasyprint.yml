@@ -4,8 +4,9 @@ pdf-engine: weasyprint
 table-of-contents: true
 number-sections: true
 # shift-heading-level-by: -1
+# - https://cdn.jsdelivr.net/npm/marx-css@3.0.7/css/marx.min.css
 css: 
-  - https://cdn.jsdelivr.net/npm/marx-css@3.0.7/css/marx.min.css
+  - https://unpkg.com/github-markdown-css
   - https://cdn.jsdelivr.net/gh/duzyn/pandoc-templates/markdown.css
 html-math-method:
   method: mathjax
