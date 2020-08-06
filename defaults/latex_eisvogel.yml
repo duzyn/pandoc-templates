@@ -1,10 +1,11 @@
-from: markdown
+from: markdown+east_asian_line_breaks
 to: pdf
 pdf-engine: xelatex
-template: https://cdn.jsdelivr.net/gh/Wandmalfarbe/pandoc-latex-template/eisvogel.tex
+template: eisvogel.tex
 listings: true
 table-of-contents: true
 number-sections: true
+shift-heading-level-by: -1
 variables:
   documentclass: article
   titlepage: true

@@ -1,9 +1,0 @@
-from: markdown
-to: html5
-standalone: true
-css: 
-  - https://cdn.jsdelivr.net/npm/tufte-css@1.7.2/tufte.min.css
-  - https://cdn.jsdelivr.net/gh/duzyn/duzyn.github.io/assets/css/blog.css
-variables:
-  include-before: <article><section>
-  include-after: </section></article>
