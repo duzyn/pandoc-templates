@@ -1,0 +1,8 @@
+from: markdown
+to: latex
+standalone: true
+pdf-engine: xelatex
+metadata:
+  documentclass: ctexart
+  papersize: a4
+  colorlinks: true

@@ -1,0 +1,36 @@
+from: markdown
+to: html
+pdf-engine: wkhtmltopdf
+pdf-engine-opts:
+  - "--print-media-type"
+  - "--page-size"
+  - "A4"
+  - "--quiet"
+  - "--margin-left"
+  - "20mm"
+  - "--margin-right"
+  - "20mm"
+  - "--margin-top"
+  - "20mm"
+  - "--margin-bottom"
+  - "20mm"
+  - "--footer-center"
+  - "[page]"
+  - "--footer-font-name"
+  - "Georgia"
+  - "--footer-font-size"
+  - "10"
+  - "--footer-spacing"
+  - "10"
+html-math-method:
+  method: webtex
+  url: https://latex.codecogs.com/png.image?
+variables:
+  header-includes: |
+    <style>
+      @media print {
+        body {
+          line-height: 1.5;
+        }
+      }
+    </style>

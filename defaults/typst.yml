@@ -1,0 +1,5 @@
+from: markdown
+to: typst
+pdf-engine: typst
+variables:
+  papersize: a4

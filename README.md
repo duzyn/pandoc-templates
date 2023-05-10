@@ -1,13 +1,10 @@
 # Pandoc Templates
 
-## Usage
-
-See [test.sh](test.sh)
+Some templates and defaults I use for Pandoc.
 
 ## Acknowledgements
 
 - [github-markdown-css](https://github.com/sindresorhus/github-markdown-css)
-- [Marx](https://github.com/mblode/marx.git)
 - [Tufte CSS](https://edwardtufte.github.io/tufte-css/)
 - [RStudio Tufte Handout](https://rstudio.github.io/tufte/)
 - [R Markdown Tufte Style](https://rstudio.github.io/tufte/cn/)
@@ -16,4 +13,4 @@ See [test.sh](test.sh)
 
 ## License
 
-Released under the MIT license. See [LICENSE](LICENSE).
+Released under the MIT license.

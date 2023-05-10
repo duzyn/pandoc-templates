@@ -1,0 +1,6 @@
+from: markdown
+to: latex
+standalone: true
+metadata:
+  papersize: a4
+  colorlinks: true

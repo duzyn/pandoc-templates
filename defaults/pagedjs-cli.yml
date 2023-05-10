@@ -1,0 +1,23 @@
+from: markdown
+to: html
+pdf-engine: pagedjs-cli
+html-math-method:
+  method: webtex
+  url: https://latex.codecogs.com/svg.image?
+variables:
+  lang: zh-CN
+  header-includes: |
+    <style>
+      @media print {
+        @page {
+          size: A4;
+          margin: 20mm;
+          @bottom-center {
+            content: counter(page);
+          }
+        }
+        body {
+          line-height: 1.5;
+        }
+      }
+    </style>

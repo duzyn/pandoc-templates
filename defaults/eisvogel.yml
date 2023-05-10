@@ -1,0 +1,12 @@
+from: markdown
+to: latex
+standalone: true
+pdf-engine: xelatex
+template: eisvogel.tex
+metadata:
+  papersize: a4
+  colorlinks: true
+  mainfont: Source Serif Pro
+  sansfont: Source Sans Pro
+  monofont: Source Code Pro
+  # CJKmainfont: Noto Serif CJK SC

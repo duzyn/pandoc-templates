@@ -1,0 +1,11 @@
+from: markdown
+to: latex
+standalone: true
+pdf-engine: xelatex
+shift-heading-level-by: -1
+top-level-division: chapter
+metadata:
+  documentclass: ctexrep
+  papersize: a4
+  colorlinks: true
+  toc: true
