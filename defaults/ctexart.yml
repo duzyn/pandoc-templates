@@ -5,4 +5,3 @@ pdf-engine: xelatex
 metadata:
   documentclass: ctexart
   papersize: a4
-  colorlinks: true
