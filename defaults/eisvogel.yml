@@ -4,9 +4,12 @@ standalone: true
 pdf-engine: xelatex
 template: eisvogel.tex
 metadata:
+  lang: zh-CN
   papersize: a4
   colorlinks: true
   mainfont: Source Serif Pro
   sansfont: Source Sans Pro
   monofont: Source Code Pro
-  # CJKmainfont: Noto Serif CJK SC
+  CJKmainfont: Noto Serif CJK SC
+  CJKsansfont: Noto Sans CJK SC
+  CJKmonofont: Noto Sans Mono CJK SC
