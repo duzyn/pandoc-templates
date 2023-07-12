@@ -2,10 +2,10 @@ from: markdown
 to: html5
 standalone: true
 css: 
-  - https://cdn.jsdelivr.net/npm/github-markdown-css@5.2.0/github-markdown.min.css
+  - https://unpkg.com/github-markdown-css
 html-math-method:
   method: mathjax
-  url: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+  url: https://unpkg.com/mathjax/es5/tex-mml-chtml.js
 variables:
   header-includes: |
     <style>
@@ -42,5 +42,5 @@ variables:
         }
       }
     </style>
-  include-before: <article class='markdown-body'>
-  include-after: </article>
+  include-before: <div class='markdown-body'>
+  include-after: </div>

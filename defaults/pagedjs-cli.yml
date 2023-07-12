@@ -5,7 +5,11 @@ html-math-method:
   method: webtex
   url: https://latex.codecogs.com/svg.image?
 variables:
-  lang: zh-CN
+  mainfont: Noto Serif
+  monofont: Noto Sans Mono
+  fontsize: 16px
+  linestretch: 1.5
+  maxwidth: 40em
   header-includes: |
     <style>
       @media print {

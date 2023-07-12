@@ -4,11 +4,10 @@ standalone: true
 pdf-engine: xelatex
 citeproc: true
 template: tufte-handout.tex
-metadata:
+variables:
   documentclass: tufte-handout
   papersize: a4
   colorlinks: true
   mainfont: ETBembo
-  sansfont: Source Sans Pro
-  monofont: Source Code Pro
-  # CJKmainfont: Noto Serif CJK SC
+  sansfont: Noto Sans
+  monofont: Noto Sans Mono

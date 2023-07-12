@@ -2,10 +2,9 @@ from: markdown
 to: html
 pdf-engine: wkhtmltopdf
 pdf-engine-opts:
-  - "--print-media-type"
+  - "--quiet"
   - "--page-size"
   - "A4"
-  - "--quiet"
   - "--margin-left"
   - "20mm"
   - "--margin-right"
@@ -17,7 +16,7 @@ pdf-engine-opts:
   - "--footer-center"
   - "[page]"
   - "--footer-font-name"
-  - "Georgia"
+  - "Noto Serif"
   - "--footer-font-size"
   - "10"
   - "--footer-spacing"
@@ -26,11 +25,8 @@ html-math-method:
   method: webtex
   url: https://latex.codecogs.com/png.image?
 variables:
-  header-includes: |
-    <style>
-      @media print {
-        body {
-          line-height: 1.5;
-        }
-      }
-    </style>
+  mainfont: Noto Serif
+  monofont: Noto Sans Mono
+  fontsize: 20px
+  linestretch: 1.5
+  maxwidth: 40em

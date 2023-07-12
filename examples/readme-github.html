@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="David Peng" />
+  <meta name="dcterms.date" content="2023-07-12" />
+  <title>Pandoc 模板</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="https://unpkg.com/github-markdown-css" />
+  <style>
+    @media (prefers-color-scheme: dark) {
+      body {
+        color-scheme: dark;
+        --color-canvas-default: #0d1117;
+      }
+    }
+
+    @media (prefers-color-scheme: light) {
+      body {
+        color-scheme: light;
+        --color-canvas-default: #ffffff;
+      }
+    }
+
+    body {
+      margin: 0;
+      background-color: var(--color-canvas-default);
+    }
+
+    .markdown-body {
+      box-sizing: border-box;
+      min-width: 200px;
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 45px;
+    }
+
+    @media (max-width: 767px) {
+      .markdown-body {
+        padding: 15px;
+      }
+    }
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<div class='markdown-body'>
+<header id="title-block-header">
+<h1 class="title">Pandoc 模板</h1>
+<p class="author">David Peng</p>
+<p class="date">2023-07-12</p>
+</header>
+<!-- markdownlint-disable MD025 -->
+<h1 id="pandoc-模板">Pandoc 模板</h1>
+<p>自用的一些 Pandoc 模板</p>
+<h2 id="使用方法">使用方法</h2>
+<p>在 Windows 上，克隆本仓库到 <code>%APPDATA%\pandoc</code>
+路径下：</p>
+<pre><code>git clone https://github.com/duzyn/pandoc-templates &quot;%APPDATA%\pandoc&quot;</code></pre>
+<p>在 Linux 或 macOS 上，克隆本仓库到 <code>~/.local/share/pandoc</code>
+路径下：</p>
+<pre><code>git clone https://github.com/duzyn/pandoc-templates ~/.local/share/pandoc</code></pre>
+<h2 id="参考">参考</h2>
+<ul>
+<li><a
+href="https://github.com/sindresorhus/github-markdown-css">github-markdown-css</a></li>
+<li><a href="https://edwardtufte.github.io/tufte-css/">Tufte
+CSS</a></li>
+<li><a href="https://rstudio.github.io/tufte/">RStudio Tufte
+Handout</a></li>
+<li><a href="https://rstudio.github.io/tufte/cn/">R Markdown Tufte
+Style</a></li>
+<li><a
+href="https://raw.githubusercontent.com/rstudio/tufte/master/inst/rmarkdown/templates/tufte_handout/resources/tufte-handout.tex">RStudio
+Pandoc template: tufte-handout.tex</a></li>
+<li><a
+href="https://github.com/Wandmalfarbe/pandoc-latex-template">Eisvogel
+LaTeX theme</a></li>
+</ul>
+</div>
+</body>
+</html>
