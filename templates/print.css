@@ -1,0 +1,55 @@
+@page {
+    margin: 0;
+    size: $if(papersize)$$papersize$$else$A4$endif$;
+    padding-left: $if(margin-left)$$margin-left$$else$20mm$endif$;
+    padding-right: $if(margin-right)$$margin-right$$else$20mm$endif$;
+    padding-top: $if(margin-top)$$margin-top$$else$20mm$endif$;
+    padding-bottom: $if(margin-bottom)$$margin-bottom$$else$20mm$endif$;
+
+    @bottom-right {
+        content: counter(page);
+    }
+}
+
+html {
+    background-color: white;
+}
+
+body {
+    font-family: $if(mainfont)$$mainfont$$else$'Noto Serif', 'Noto Serif CJK SC', 'Georgia', serif$endif$;
+    font-size: $if(fontsize)$$fontsize$$else$12pt$endif$;
+    line-height: $if(linestretch)$$linestretch$$else$1.5$endif$;
+    background-color: transparent;
+    color: black;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $if(sansfont)$$sansfont$$else$'Noto Sans', 'Noto Sans CJK SC', "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif$endif$;
+}
+
+p,
+h2,
+h3 {
+    orphans: 3;
+    widows: 3;
+}
+
+h2,
+h3,
+h4 {
+    page-break-after: avoid;
+}
+
+pre,
+code {
+    font-family: $if(monofont)$$monofont$$else$'Noto Sans Mono', 'Noto Sans Mono CJK SC', 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace$endif$;
+}
+
+pre code {
+    white-space: pre-wrap;
+}

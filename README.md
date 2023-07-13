@@ -2,12 +2,12 @@
 title: Pandoc 模板
 author: David Peng
 date: 2023-07-12
-mainfont: Noto Serif CJK SC
-monofont: Noto Sans Mono CJK SC
 CJKmainfont: Noto Serif CJK SC
 CJKsansfont: Noto Sans CJK SC
 CJKmonofont: Noto Sans Mono CJK SC
-titlepage: true
+wkhtmltopdfCJKmainfont: Noto Serif CJK SC
+wkhtmltopdfCJKsansfont: Noto Sans CJK SC
+wkhtmltopdfCJKmonofont: Noto Sans Mono CJK SC
 ---
 
 <!-- markdownlint-disable MD025 -->

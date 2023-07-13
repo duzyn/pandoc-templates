@@ -1,0 +1,19 @@
+html {
+  background-color: #fdfdfd;
+}
+
+body {
+  background-color: transparent;
+  color: #1a1a1a;
+  font-family: 'Noto Serif', 'Noto Serif CJK SC', 'Georgia', serif;
+  line-height: 1.5;
+  font-size: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Noto Sans', 'Noto Sans CJK SC', "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif;
+}
+
+pre, code {
+  font-family: 'Noto Sans Mono', 'Noto Sans Mono CJK SC', 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace;
+}

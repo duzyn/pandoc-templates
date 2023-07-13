@@ -1,0 +1,17 @@
+from: markdown
+to: latex
+standalone: true
+pdf-engine: xelatex
+# shift-heading-level-by: -1
+top-level-division: chapter
+variables:
+  documentclass: ctexrep
+  papersize: a4
+  colorlinks: true
+  mainfont: Noto Serif
+  sansfont: Noto Sans
+  monofont: Noto Sans Mono
+  # Chinese fonts
+  # CJKmainfont: Noto Serif CJK SC
+  # CJKsansfont: Noto Sans CJK SC
+  # CJKmonofont: Noto Sans Mono CJK SC

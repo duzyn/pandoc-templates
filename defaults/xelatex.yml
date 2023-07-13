@@ -1,7 +1,0 @@
-from: markdown
-to: latex
-standalone: true
-pdf-engine: xelatex
-variables:
-  papersize: a4
-  colorlinks: true

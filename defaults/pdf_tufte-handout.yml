@@ -2,8 +2,8 @@ from: markdown
 to: latex
 standalone: true
 pdf-engine: xelatex
-citeproc: true
 template: tufte-handout.tex
+citeproc: true
 variables:
   documentclass: tufte-handout
   papersize: a4
@@ -11,3 +11,7 @@ variables:
   mainfont: ETBembo
   sansfont: Noto Sans
   monofont: Noto Sans Mono
+  # Chinese fonts
+  # CJKmainfont: Noto Serif CJK SC
+  # CJKsansfont: Noto Sans CJK SC
+  # CJKmonofont: Noto Sans Mono CJK SC
