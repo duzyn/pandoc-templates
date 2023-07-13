@@ -29,7 +29,6 @@ cd "$SCRIPT_DIR" || exit 1
 [[ -f ./templates/tufte-handout-origin.tex ]] && rm ./templates/tufte-handout-origin.tex
 
 # Update source
-cp -f ./README.md ./examples
 wget -O ./examples/pandoc-manual.md          https://ghproxy.com/https://raw.githubusercontent.com/jgm/pandoc/master/MANUAL.txt
 wget -O ./templates/eisvogel.tex             https://ghproxy.com/https://raw.githubusercontent.com/Wandmalfarbe/pandoc-latex-template/master/eisvogel.tex
 wget -O ./templates/tufte-handout-origin.tex https://ghproxy.com/https://raw.githubusercontent.com/rstudio/tufte/master/inst/rmarkdown/templates/tufte_handout/resources/tufte-handout.tex
@@ -56,15 +55,15 @@ pandoc -d defaults/pdf_xelatex.yml         -o ./examples/pandoc-manual-xelatex.p
 pandoc -d defaults/pdf_weasyprint.yml      -o ./examples/pandoc-manual-weasyprint.pdf    ./examples/pandoc-manual.md --toc
 
 # Test Chinese
-pandoc -d defaults/docx.yml                -o ./examples/README.docx              ./examples/README.md
-pandoc -d defaults/html5_github.yml        -o ./examples/README-github.html       ./examples/README.md
-pandoc -d defaults/latex.yml               -o ./examples/README.tex               ./examples/README.md
-pandoc -d defaults/pdf_ctexart.yml         -o ./examples/README-ctexart.pdf       ./examples/README.md
-pandoc -d defaults/pdf_ctexrep.yml         -o ./examples/README-ctexrep.pdf       ./examples/README.md
-pandoc -d defaults/pdf_eisvogel.yml        -o ./examples/README-eisvogel.pdf      ./examples/README.md
-pandoc -d defaults/pdf_pagedjs-cli.yml     -o ./examples/README-pagedjs-cli.pdf   ./examples/README.md
-pandoc -d defaults/pdf_tufte-handout.yml   -o ./examples/README-tufte-handout.pdf ./examples/README.md
-pandoc -d defaults/pdf_typst.yml           -o ./examples/README-typst.pdf         ./examples/README.md
-pandoc -d defaults/pdf_weasyprint.yml      -o ./examples/README-weasyprint.pdf    ./examples/README.md
-pandoc -d defaults/pdf_wkhtmltopdf.yml     -o ./examples/README-wkhtmltopdf.pdf   ./examples/README.md
-pandoc -d defaults/pdf_xelatex.yml         -o ./examples/README-xelatex.pdf       ./examples/README.md
+pandoc -d defaults/docx.yml                -o ./examples/README.docx              ./README.md
+pandoc -d defaults/html5_github.yml        -o ./examples/README-github.html       ./README.md
+pandoc -d defaults/latex.yml               -o ./examples/README.tex               ./README.md
+pandoc -d defaults/pdf_ctexart.yml         -o ./examples/README-ctexart.pdf       ./README.md
+pandoc -d defaults/pdf_ctexrep.yml         -o ./examples/README-ctexrep.pdf       ./README.md
+pandoc -d defaults/pdf_eisvogel.yml        -o ./examples/README-eisvogel.pdf      ./README.md
+pandoc -d defaults/pdf_pagedjs-cli.yml     -o ./examples/README-pagedjs-cli.pdf   ./README.md
+pandoc -d defaults/pdf_tufte-handout.yml   -o ./examples/README-tufte-handout.pdf ./README.md
+pandoc -d defaults/pdf_typst.yml           -o ./examples/README-typst.pdf         ./README.md
+pandoc -d defaults/pdf_weasyprint.yml      -o ./examples/README-weasyprint.pdf    ./README.md
+pandoc -d defaults/pdf_wkhtmltopdf.yml     -o ./examples/README-wkhtmltopdf.pdf   ./README.md
+pandoc -d defaults/pdf_xelatex.yml         -o ./examples/README-xelatex.pdf       ./README.md

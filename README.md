@@ -5,9 +5,9 @@ date: 2023-07-12
 CJKmainfont: Noto Serif CJK SC
 CJKsansfont: Noto Sans CJK SC
 CJKmonofont: Noto Sans Mono CJK SC
-wkhtmltopdfCJKmainfont: Noto Serif CJK SC
-wkhtmltopdfCJKsansfont: Noto Sans CJK SC
-wkhtmltopdfCJKmonofont: Noto Sans Mono CJK SC
+wkhtmltopdfCJKmainfont: 思源宋体
+wkhtmltopdfCJKsansfont: 思源黑体
+wkhtmltopdfCJKmonofont: 思源等宽
 ---
 
 <!-- markdownlint-disable MD025 -->
