@@ -11,7 +11,3 @@ variables:
   mainfont: ETBembo
   sansfont: Noto Sans
   monofont: Noto Sans Mono
-  # Chinese fonts
-  # CJKmainfont: Noto Serif CJK SC
-  # CJKsansfont: Noto Sans CJK SC
-  # CJKmonofont: Noto Sans Mono CJK SC
