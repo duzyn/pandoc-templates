@@ -11,9 +11,9 @@ pdf-engine-opts:
   - "--footer-font-name"
   - "Noto Serif"
   - "--footer-font-size"
-  - "10"
+  - "12"
   - "--footer-spacing"
-  - "10"
+  - "12"
 html-math-method:
   method: webtex
   url: https://latex.codecogs.com/png.image?

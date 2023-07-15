@@ -109,8 +109,7 @@ pre code {
 /* Figures */
 figure,
 .figure {
-  margin-left: 0;
-  margin-right: 0;
+  margin: 1em 0;
   text-align: center;
 }
 
@@ -118,7 +117,7 @@ figcaption,
 .caption {
   text-indent: 0;
   font-size: 88.8889%;
-  margin-top: 0.8em;
+  margin-top: 0;
   margin-bottom: 0;
 }
 
