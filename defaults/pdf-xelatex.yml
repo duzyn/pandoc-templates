@@ -1,0 +1,9 @@
+from: markdown
+to: latex
+standalone: true
+pdf-engine: xelatex
+variables:
+  papersize: a4
+  mainfont: Source Serif 4
+  sansfont: Source Sans 3
+  monofont: Source Code Pro

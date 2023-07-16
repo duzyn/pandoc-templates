@@ -9,7 +9,7 @@ pdf-engine-opts:
   - "--footer-right"
   - "[page]"
   - "--footer-font-name"
-  - "Noto Serif"
+  - "Source Serif 4"
   - "--footer-font-size"
   - "12"
   - "--footer-spacing"
@@ -18,7 +18,7 @@ html-math-method:
   method: webtex
   url: https://latex.codecogs.com/png.image?
 variables:
-  fontsize: 16pt
-  mainfont: Noto Serif
-  sansfont: Noto Sans
-  monofont: Noto Sans Mono
+  fontsize: 12pt
+  mainfont: Source Serif 4
+  sansfont: Source Sans 3
+  monofont: Source Code Pro

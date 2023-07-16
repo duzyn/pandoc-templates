@@ -19,8 +19,8 @@ $endif$
   <title>$if(title-prefix)$$title-prefix$ – $endif$$pagetitle$</title>
   <style>
     $styles.html()$
-    $github-markdown.css()$
-    $github.css()$
+    $_github-markdown.css()$
+    $_github.css()$
   </style>
 $for(css)$
   <link rel="stylesheet" href="$css$" />

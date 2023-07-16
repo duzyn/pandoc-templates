@@ -20,9 +20,9 @@ $endif$
   <style>
     $styles.html()$
     @media print {
-      $base.css()$
-      $print.css()$
-      $pandoc.css()$
+      $_base.css()$
+      $_print.css()$
+      $_pandoc.css()$
       $if(wkhtmltopdfCJKmainfont)$
       body { font-family: '$wkhtmltopdfCJKmainfont$'; }
       $endif$

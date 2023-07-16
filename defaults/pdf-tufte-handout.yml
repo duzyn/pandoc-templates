@@ -7,7 +7,6 @@ citeproc: true
 variables:
   documentclass: tufte-handout
   papersize: a4
-  colorlinks: true
-  mainfont: ETBembo
-  sansfont: Noto Sans
-  monofont: Noto Sans Mono
+  mainfont: ETBookOT
+  sansfont: Source Sans 3
+  monofont: Source Code Pro

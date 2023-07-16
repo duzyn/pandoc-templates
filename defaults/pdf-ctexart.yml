@@ -2,8 +2,6 @@ from: markdown
 to: latex
 standalone: true
 pdf-engine: xelatex
-top-level-division: chapter
 variables:
-  documentclass: ctexrep
+  documentclass: ctexart
   papersize: a4
-  colorlinks: true

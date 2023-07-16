@@ -4,6 +4,6 @@ pdf-engine: typst
 variables:
   papersize: a4
   fontsize: 12pt
-  mainfont: Noto Serif
-  sansfont: Noto Sans
-  monofont: Noto Sans Mono
+  mainfont: Source Serif 4
+  sansfont: Source Sans 3
+  monofont: Source Code Pro

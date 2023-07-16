@@ -5,7 +5,6 @@ pdf-engine: xelatex
 template: eisvogel.tex
 variables:
   papersize: a4
-  colorlinks: true
-  mainfont: Noto Serif
-  sansfont: Noto Sans
-  monofont: Noto Sans Mono
+  mainfont: Source Serif 4
+  sansfont: Source Sans 3
+  monofont: Source Code Pro

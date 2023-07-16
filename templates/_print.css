@@ -16,7 +16,7 @@ html {
 }
 
 body {
-    font-family: $if(mainfont)$$mainfont$$else$'Noto Serif', 'Noto Serif CJK SC', 'Georgia', serif$endif$;
+    font-family: $if(mainfont)$$mainfont$$else$'Source Serif 4', 'Source Han Serif SC', 'Georgia', serif$endif$;
     font-size: $if(fontsize)$$fontsize$$else$12pt$endif$;
     line-height: $if(linestretch)$$linestretch$$else$1.5$endif$;
     background-color: transparent;
@@ -29,7 +29,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: $if(sansfont)$$sansfont$$else$'Noto Sans', 'Noto Sans CJK SC', "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif$endif$;
+    font-family: $if(sansfont)$$sansfont$$else$'Source Sans 3', 'Source Han Sans SC', "Segoe UI", Helvetica, Arial, sans-serif$endif$;
 }
 
 p,
@@ -47,7 +47,7 @@ h4 {
 
 pre,
 code {
-    font-family: $if(monofont)$$monofont$$else$'Noto Sans Mono', 'Noto Sans Mono CJK SC', 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace$endif$;
+    font-family: $if(monofont)$$monofont$$else$'Source Code Pro', 'Source Han Mono SC', 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace$endif$;
 }
 
 pre code {

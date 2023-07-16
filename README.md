@@ -1,17 +1,3 @@
----
-title: Pandoc 模板
-author: David Peng
-date: 2023-07-12
-CJKmainfont: Noto Serif CJK SC
-CJKsansfont: Noto Sans CJK SC
-CJKmonofont: Noto Sans Mono CJK SC
-wkhtmltopdfCJKmainfont: 思源宋体
-wkhtmltopdfCJKsansfont: 思源黑体
-wkhtmltopdfCJKmonofont: 思源等宽
----
-
-<!-- markdownlint-disable MD025 -->
-
 # Pandoc 模板
 
 自用的一些 Pandoc 模板
@@ -20,11 +6,13 @@ wkhtmltopdfCJKmonofont: 思源等宽
 
 在 Windows 上，克隆本仓库到 `%APPDATA%\pandoc` 路径下：
 
-    git clone https://github.com/duzyn/pandoc-templates "%APPDATA%\pandoc"
+    git clone https://ghproxy.com/https://github.com/duzyn/pandoc-templates \
+    "%APPDATA%\pandoc"
 
 在 Linux 或 macOS 上，克隆本仓库到 `~/.local/share/pandoc` 路径下：
 
-    git clone https://github.com/duzyn/pandoc-templates ~/.local/share/pandoc
+    git clone https://ghproxy.com/https://github.com/duzyn/pandoc-templates \
+    ~/.local/share/pandoc
 
 ## 参考
 

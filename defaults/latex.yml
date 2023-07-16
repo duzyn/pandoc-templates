@@ -3,4 +3,3 @@ to: latex
 standalone: true
 variables:
   papersize: a4
-  colorlinks: true
