@@ -1,6 +1,3 @@
 wkhtmltopdfCJKmainfont: 思源宋体
 wkhtmltopdfCJKsansfont: 思源黑体
 wkhtmltopdfCJKmonofont: 思源等宽
-# wkhtmltopdfCJKmainfont: Source Han Serif SC
-# wkhtmltopdfCJKsansfont: Source Han Sans SC
-# wkhtmltopdfCJKmonofont: Source Han Mono SC
