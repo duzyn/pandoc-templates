@@ -1,7 +1,7 @@
 from: markdown
 to: html
 pdf-engine: pagedjs-cli
-template: print.html5
+template: print.html
 html-math-method:
   method: webtex
   url: https://latex.codecogs.com/svg.image?

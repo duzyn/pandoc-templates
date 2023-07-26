@@ -1,0 +1,7 @@
+from: markdown
+to: html5
+template: github.html
+self-contained: true
+html-math-method:
+  method: mathjax
+  url: https://unpkg.com/mathjax/es5/tex-mml-chtml.js

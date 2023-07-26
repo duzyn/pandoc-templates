@@ -18,20 +18,11 @@ $if(description-meta)$
 $endif$
   <title>$if(title-prefix)$$title-prefix$ – $endif$$pagetitle$</title>
   <style>
-    $styles.html()$
     @media print {
+      $styles.html()$
       $_base.css()$
       $_print.css()$
       $_pandoc.css()$
-      $if(wkhtmltopdfCJKmainfont)$
-      body { font-family: '$wkhtmltopdfCJKmainfont$'; }
-      $endif$
-      $if(wkhtmltopdfCJKsansfont)$
-      h1, h2, h3, h4, h5, h6 { font-family: '$wkhtmltopdfCJKsansfont$'; }
-      $endif$
-      $if(wkhtmltopdfCJKmonofont)$
-      pre, code { font-family: '$wkhtmltopdfCJKmonofont$'; }
-      $endif$
     }
   </style>
 $for(css)$

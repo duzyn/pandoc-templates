@@ -1,5 +1,4 @@
 from: markdown
 to: docx
-standalone: true
 variables:
   papersize: a4

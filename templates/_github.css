@@ -13,16 +13,21 @@
 }
 
 body {
-  margin: 0 auto;
   background-color: var(--color-canvas-default);
+  max-width: $if(maxwidth)$$maxwidth$$else$48em$endif$;
+  padding-left: $if(margin-left)$$margin-left$$else$2em$endif$;
+  padding-right: $if(margin-right)$$margin-right$$else$2em$endif$;
+  padding-top: $if(margin-top)$$margin-top$$else$2em$endif$;
+  padding-bottom: $if(margin-bottom)$$margin-bottom$$else$2em$endif$;
+  margin: 0 auto;
 }
 
 .markdown-body {
   box-sizing: border-box;
-  min-width: 20em;
-  max-width: 60em;
-  margin: 0 auto;
-  padding: 2em;
+}
+
+h1.title {
+  border: 0;
 }
 
 @media (max-width: 767px) {

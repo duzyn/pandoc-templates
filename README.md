@@ -1,3 +1,11 @@
+---
+title: Pandoc 模板
+author: David Peng
+date: 2023-07-12
+---
+
+<!-- markdownlint-disable MD025 -->
+
 # Pandoc 模板
 
 自用的一些 Pandoc 模板

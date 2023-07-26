@@ -17,3 +17,7 @@ pdf-engine-opts:
 html-math-method:
   method: webtex
   url: https://latex.codecogs.com/png.image?
+variables:
+  mainfont: 思源宋体
+  sansfont: 思源黑体
+  monofont: 思源等宽

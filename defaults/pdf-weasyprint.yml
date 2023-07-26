@@ -1,7 +1,7 @@
 from: markdown
 to: html
 pdf-engine: weasyprint
-template: print.html5
+template: print.html
 # https://doc.courtbouillon.org/weasyprint/stable/api_reference.html#command-line-api
 pdf-engine-opts:
   - "--quiet"

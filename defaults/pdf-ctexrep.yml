@@ -1,6 +1,5 @@
 from: markdown
 to: latex
-standalone: true
 pdf-engine: xelatex
 top-level-division: chapter
 variables:

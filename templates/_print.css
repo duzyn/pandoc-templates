@@ -1,26 +1,26 @@
 @page {
-    margin: 0;
-    size: $if(papersize)$$papersize$$else$A4$endif$;
-    padding-left: $if(margin-left)$$margin-left$$else$20mm$endif$;
-    padding-right: $if(margin-right)$$margin-right$$else$20mm$endif$;
-    padding-top: $if(margin-top)$$margin-top$$else$20mm$endif$;
-    padding-bottom: $if(margin-bottom)$$margin-bottom$$else$20mm$endif$;
+  size: $if(papersize)$$papersize$$else$A4$endif$;
+  padding-left: $if(margin-left)$$margin-left$$else$10mm$endif$;
+  padding-right: $if(margin-right)$$margin-right$$else$10mm$endif$;
+  padding-top: $if(margin-top)$$margin-top$$else$10mm$endif$;
+  padding-bottom: $if(margin-bottom)$$margin-bottom$$else$10mm$endif$;
 
-    @bottom-right {
-        content: counter(page);
-    }
+  @bottom-right {
+    content: counter(page);
+  }
 }
 
 html {
-    background-color: white;
+  background-color: white;
 }
 
 body {
-    font-family: $if(mainfont)$$mainfont$$else$'Source Serif 4', 'Source Han Serif SC', 'Georgia', serif$endif$;
-    font-size: $if(fontsize)$$fontsize$$else$12pt$endif$;
-    line-height: $if(linestretch)$$linestretch$$else$1.5$endif$;
-    background-color: transparent;
-    color: black;
+  max-width: $if(maxwidth)$$maxwidth$$else$48em$endif$;
+  font-family: $if(mainfont)$'$mainfont$'$else$'Source Serif 4', 'Source Han Serif SC', 'Georgia', serif$endif$;
+  font-size: $if(fontsize)$$fontsize$$else$12pt$endif$;
+  line-height: $if(linestretch)$$linestretch$$else$1.5$endif$;
+  background-color: transparent;
+  color: black;
 }
 
 h1,
@@ -29,27 +29,27 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: $if(sansfont)$$sansfont$$else$'Source Sans 3', 'Source Han Sans SC', "Segoe UI", Helvetica, Arial, sans-serif$endif$;
+  font-family: $if(sansfont)$'$sansfont$'$else$'Source Sans 3', 'Source Han Sans SC', "Segoe UI", Helvetica, Arial, sans-serif$endif$;
 }
 
 p,
 h2,
 h3 {
-    orphans: 3;
-    widows: 3;
+  orphans: 3;
+  widows: 3;
 }
 
 h2,
 h3,
 h4 {
-    page-break-after: avoid;
+  page-break-after: avoid;
 }
 
 pre,
 code {
-    font-family: $if(monofont)$$monofont$$else$'Source Code Pro', 'Source Han Mono SC', 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace$endif$;
+  font-family: $if(monofont)$'$monofont$'$else$'Source Code Pro', 'Source Han Mono SC', 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace$endif$;
 }
 
 pre code {
-    white-space: pre-wrap;
+  white-space: pre-wrap;
 }

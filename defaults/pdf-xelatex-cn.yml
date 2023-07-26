@@ -6,3 +6,6 @@ variables:
   mainfont: Source Serif 4
   sansfont: Source Sans 3
   monofont: Source Code Pro
+  CJKmainfont: Source Han Serif SC
+  CJKsansfont: Source Han Sans SC
+  CJKmonofont: Source Han Mono SC
