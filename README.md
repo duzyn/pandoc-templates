@@ -1,7 +1,7 @@
 ---
 title: Pandoc 模板
 author: David Peng
-date: 2023-07-12
+date: 2023-08-08
 ---
 
 <!-- markdownlint-disable MD025 -->
@@ -21,6 +21,8 @@ date: 2023-07-12
 
     git clone https://ghproxy.com/https://github.com/duzyn/pandoc-templates \
     ~/.local/share/pandoc
+
+或者克隆到任意路径后，在 Windows 上时运行 `.\mklink_pandoc_data_dir.bat`，在 Linux 或 macOS 上，运行 `.\ln_pandoc_data_dir.sh`
 
 ## 参考
 

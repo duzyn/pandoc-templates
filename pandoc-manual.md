@@ -7406,3 +7406,4 @@ AUTHORS.md in the pandoc source code.
 
 [GPL]: https://www.gnu.org/copyleft/gpl.html "GNU General Public License"
 [YAML]: https://yaml.org/spec/1.2/spec.html "YAML v1.2 Spec"
+"

@@ -12,6 +12,10 @@
   }
 }
 
+html {
+  background-color: transparent;
+}
+
 body {
   background-color: var(--color-canvas-default);
   max-width: $if(maxwidth)$$maxwidth$$else$48em$endif$;

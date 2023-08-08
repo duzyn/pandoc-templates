@@ -1,9 +1,9 @@
 @page {
   size: $if(papersize)$$papersize$$else$A4$endif$;
-  padding-left: $if(margin-left)$$margin-left$$else$10mm$endif$;
-  padding-right: $if(margin-right)$$margin-right$$else$10mm$endif$;
-  padding-top: $if(margin-top)$$margin-top$$else$10mm$endif$;
-  padding-bottom: $if(margin-bottom)$$margin-bottom$$else$10mm$endif$;
+  padding-left: $if(margin-left)$$margin-left$$else$20mm$endif$;
+  padding-right: $if(margin-right)$$margin-right$$else$20mm$endif$;
+  padding-top: $if(margin-top)$$margin-top$$else$20mm$endif$;
+  padding-bottom: $if(margin-bottom)$$margin-bottom$$else$20mm$endif$;
 
   @bottom-right {
     content: counter(page);
@@ -52,4 +52,22 @@ code {
 
 pre code {
   white-space: pre-wrap;
+}
+
+figure,
+table {
+  page-break-inside: avoid;
+}
+
+/* Pandoc TOC */
+
+nav[id=TOC] a {
+  display: block;
+  border-bottom: 1pt dotted black;
+  text-decoration: none;
+}
+
+nav[id=TOC] a::after {
+  float: right;
+  content: target-counter(attr(href), page);
 }
