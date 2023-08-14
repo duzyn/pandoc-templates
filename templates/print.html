@@ -18,8 +18,8 @@ $if(description-meta)$
 $endif$
   <title>$if(title-prefix)$$title-prefix$ – $endif$$pagetitle$</title>
   <style>
+    $styles.html()$
     @media print {
-      $styles.html()$
       $_base.css()$
       $_print.css()$
       $_pandoc.css()$

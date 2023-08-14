@@ -1,9 +1,0 @@
-from: markdown
-to: html5
-standalone: true
-template: github.html5
-html-math-method:
-  method: mathjax
-  url: https://unpkg.com/mathjax/es5/tex-mml-chtml.js
-variables:
-  document-css: false

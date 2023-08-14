@@ -1,16 +1,14 @@
 from: markdown+east_asian_line_breaks
-to: latex
-pdf-engine: xelatex
-template: tufte-handout.tex
+to: typst
+pdf-engine: typst
 variables:
-  documentclass: tufte-handout
+  lang: zh
+  region: CN
   papersize: a4
-  mainfont: ETBookOT
+  fontsize: 12pt
+  mainfont: Source Serif 4
   sansfont: Source Sans 3
   monofont: Source Code Pro
   CJKmainfont: Source Han Serif SC
   CJKsansfont: Source Han Sans SC
   CJKmonofont: Source Han Mono SC
-  CJKoptions:
-    - AutoFakeSlant=true
-    - AutoFakeBold=true

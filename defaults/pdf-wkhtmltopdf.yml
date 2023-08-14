@@ -4,15 +4,27 @@ pdf-engine: wkhtmltopdf
 template: print.html
 # https://wkhtmltopdf.org/usage/wkhtmltopdf.txt
 pdf-engine-opts:
-  - "--print-media-type"
   - "--quiet"
-  - "--footer-right"
+  - "--print-media-type"
+  - "--enable-local-file-access"
+  - "--margin-bottom"
+  - "20mm"
+  - "--margin-left"
+  - "20mm"
+  - "--margin-right"
+  - "20mm"
+  - "--margin-top"
+  - "20mm"
+  - "--header-line"
+  - "--header-left"
+  - "[doctitle]"
+  - "--header-right"
   - "[page]"
-  - "--footer-font-name"
+  - "--header-font-name"
   - "Source Serif 4"
-  - "--footer-font-size"
-  - "12"
-  - "--footer-spacing"
+  - "--header-font-size"
+  - "10"
+  - "--header-spacing"
   - "6"
 html-math-method:
   method: webtex

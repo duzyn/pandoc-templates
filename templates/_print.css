@@ -29,7 +29,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $if(sansfont)$'$sansfont$'$else$'Source Sans 3', 'Source Han Sans SC', "Segoe UI", Helvetica, Arial, sans-serif$endif$;
+  font-family: $if(sansfont)$'$sansfont$'$else$'Source Sans 3', 'Source Han Sans SC', 'Segoe UI', Helvetica, Arial, sans-serif$endif$;
 }
 
 p,
@@ -38,6 +38,12 @@ h3 {
   orphans: 3;
   widows: 3;
 }
+
+/* 
+h1 {
+  page-break-before: always;
+}
+ */
 
 h2,
 h3,

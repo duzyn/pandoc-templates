@@ -1,4 +1,4 @@
-from: markdown
+from: markdown+east_asian_line_breaks
 to: latex
 pdf-engine: xelatex
 top-level-division: chapter
